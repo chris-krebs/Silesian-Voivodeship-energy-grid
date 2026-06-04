@@ -21,7 +21,7 @@ var style_geoBoundariesCZEADM0_8 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(213,213,213,0.8)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}),fill: new ol.style.Fill({color: 'rgba(190,178,151,0.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(213,213,213,0.8)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.04}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

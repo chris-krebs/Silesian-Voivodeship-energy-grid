@@ -59,7 +59,7 @@ var lyr_geoBoundariesSVKADM1_3 = new ol.layer.Vector({
                 source:jsonSource_geoBoundariesSVKADM1_3, 
                 style: style_geoBoundariesSVKADM1_3,
                 popuplayertitle: 'geoBoundaries-SVK-ADM1',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/geoBoundariesSVKADM1_3.png" /> geoBoundaries-SVK-ADM1'
             });
 var format_geoBoundariesCZEADM1_4 = new ol.format.GeoJSON();
@@ -74,7 +74,7 @@ var lyr_geoBoundariesCZEADM1_4 = new ol.layer.Vector({
                 source:jsonSource_geoBoundariesCZEADM1_4, 
                 style: style_geoBoundariesCZEADM1_4,
                 popuplayertitle: 'geoBoundaries-CZE-ADM1',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/geoBoundariesCZEADM1_4.png" /> geoBoundaries-CZE-ADM1'
             });
 var format_geoBoundariesPOLADM2_5 = new ol.format.GeoJSON();
@@ -89,7 +89,7 @@ var lyr_geoBoundariesPOLADM2_5 = new ol.layer.Vector({
                 source:jsonSource_geoBoundariesPOLADM2_5, 
                 style: style_geoBoundariesPOLADM2_5,
                 popuplayertitle: 'geoBoundaries-POL-ADM2',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/geoBoundariesPOLADM2_5.png" /> geoBoundaries-POL-ADM2'
             });
 var format_geoBoundariesPOLADM1_6 = new ol.format.GeoJSON();
@@ -104,7 +104,7 @@ var lyr_geoBoundariesPOLADM1_6 = new ol.layer.Vector({
                 source:jsonSource_geoBoundariesPOLADM1_6, 
                 style: style_geoBoundariesPOLADM1_6,
                 popuplayertitle: 'geoBoundaries-POL-ADM1',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/geoBoundariesPOLADM1_6.png" /> geoBoundaries-POL-ADM1'
             });
 var format_geoBoundariesSVKADM0_7 = new ol.format.GeoJSON();
@@ -119,7 +119,7 @@ var lyr_geoBoundariesSVKADM0_7 = new ol.layer.Vector({
                 source:jsonSource_geoBoundariesSVKADM0_7, 
                 style: style_geoBoundariesSVKADM0_7,
                 popuplayertitle: 'geoBoundaries-SVK-ADM0',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/geoBoundariesSVKADM0_7.png" /> geoBoundaries-SVK-ADM0'
             });
 var format_geoBoundariesCZEADM0_8 = new ol.format.GeoJSON();
@@ -134,80 +134,123 @@ var lyr_geoBoundariesCZEADM0_8 = new ol.layer.Vector({
                 source:jsonSource_geoBoundariesCZEADM0_8, 
                 style: style_geoBoundariesCZEADM0_8,
                 popuplayertitle: 'geoBoundaries-CZE-ADM0',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/geoBoundariesCZEADM0_8.png" /> geoBoundaries-CZE-ADM0'
             });
-var format_gminy_9 = new ol.format.GeoJSON();
-var features_gminy_9 = format_gminy_9.readFeatures(json_gminy_9, 
+var format_Voting_gminy_9 = new ol.format.GeoJSON();
+var features_Voting_gminy_9 = format_Voting_gminy_9.readFeatures(json_Voting_gminy_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_gminy_9 = new ol.source.Vector({
+var jsonSource_Voting_gminy_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_gminy_9.addFeatures(features_gminy_9);
-var lyr_gminy_9 = new ol.layer.Vector({
+jsonSource_Voting_gminy_9.addFeatures(features_Voting_gminy_9);
+var lyr_Voting_gminy_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_gminy_9, 
-                style: style_gminy_9,
-                popuplayertitle: 'gminy',
+                source:jsonSource_Voting_gminy_9, 
+                style: style_Voting_gminy_9,
+                popuplayertitle: 'Voting_gminy',
                 interactive: true,
-    title: 'gminy<br />\
-    <img src="styles/legend/gminy_9_0.png" /> KO<br />\
-    <img src="styles/legend/gminy_9_1.png" /> PiS<br />\
-    <img src="styles/legend/gminy_9_2.png" /> PSL<br />' });
-var format_powiaty_10 = new ol.format.GeoJSON();
-var features_powiaty_10 = format_powiaty_10.readFeatures(json_powiaty_10, 
+    title: 'Voting_gminy<br />\
+    <img src="styles/legend/Voting_gminy_9_0.png" /> KO<br />\
+    <img src="styles/legend/Voting_gminy_9_1.png" /> PiS<br />\
+    <img src="styles/legend/Voting_gminy_9_2.png" /> PSL<br />' });
+var format_Voting_powiaty_10 = new ol.format.GeoJSON();
+var features_Voting_powiaty_10 = format_Voting_powiaty_10.readFeatures(json_Voting_powiaty_10, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_powiaty_10 = new ol.source.Vector({
+var jsonSource_Voting_powiaty_10 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_powiaty_10.addFeatures(features_powiaty_10);
-var lyr_powiaty_10 = new ol.layer.Vector({
+jsonSource_Voting_powiaty_10.addFeatures(features_Voting_powiaty_10);
+var lyr_Voting_powiaty_10 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_powiaty_10, 
-                style: style_powiaty_10,
-                popuplayertitle: 'powiaty',
+                source:jsonSource_Voting_powiaty_10, 
+                style: style_Voting_powiaty_10,
+                popuplayertitle: 'Voting_powiaty',
                 interactive: true,
-    title: 'powiaty<br />\
-    <img src="styles/legend/powiaty_10_0.png" /> KO<br />\
-    <img src="styles/legend/powiaty_10_1.png" /> PiS<br />' });
-var format_wojewodztwa_11 = new ol.format.GeoJSON();
-var features_wojewodztwa_11 = format_wojewodztwa_11.readFeatures(json_wojewodztwa_11, 
+    title: 'Voting_powiaty<br />\
+    <img src="styles/legend/Voting_powiaty_10_0.png" /> KO<br />\
+    <img src="styles/legend/Voting_powiaty_10_1.png" /> PiS<br />' });
+var format_Voting_wojewodztwa_11 = new ol.format.GeoJSON();
+var features_Voting_wojewodztwa_11 = format_Voting_wojewodztwa_11.readFeatures(json_Voting_wojewodztwa_11, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_wojewodztwa_11 = new ol.source.Vector({
+var jsonSource_Voting_wojewodztwa_11 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_wojewodztwa_11.addFeatures(features_wojewodztwa_11);
-var lyr_wojewodztwa_11 = new ol.layer.Vector({
+jsonSource_Voting_wojewodztwa_11.addFeatures(features_Voting_wojewodztwa_11);
+var lyr_Voting_wojewodztwa_11 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_wojewodztwa_11, 
-                style: style_wojewodztwa_11,
-                popuplayertitle: 'wojewodztwa',
+                source:jsonSource_Voting_wojewodztwa_11, 
+                style: style_Voting_wojewodztwa_11,
+                popuplayertitle: 'Voting_wojewodztwa',
                 interactive: true,
-    title: 'wojewodztwa<br />\
-    <img src="styles/legend/wojewodztwa_11_0.png" /> KO<br />' });
-var format_Centroids_12 = new ol.format.GeoJSON();
-var features_Centroids_12 = format_Centroids_12.readFeatures(json_Centroids_12, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Centroids_12 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_Centroids_12.addFeatures(features_Centroids_12);
-var lyr_Centroids_12 = new ol.layer.Heatmap({
-                declutter: false,
-                source:jsonSource_Centroids_12, 
-                radius: 15 * 2,
-                gradient: ['#fcfdbf', '#fcf4b6', '#fdebac', '#fde2a3', '#fed89a', '#fecf92', '#fec68a', '#febd82', '#feb47b', '#feaa74', '#fea16e', '#fd9869', '#fc8e64', '#fb8560', '#f97b5d', '#f7725c', '#f4695c', '#f1605d', '#ec5860', '#e75263', '#e04c67', '#d9466b', '#d2426f', '#ca3e72', '#c23b75', '#ba3878', '#b2357b', '#aa337d', '#a1307e', '#992d80', '#912b81', '#892881', '#812581', '#792282', '#721f81', '#6a1c81', '#621980', '#5a167e', '#52137c', '#4a1079', '#420f75', '#390f6e', '#311165', '#29115a', '#21114e', '#1a1042', '#140e36', '#0e0b2b', '#090720', '#050416', '#02020b', '#000004'],
-                blur: 15,
-                shadow: 250,
-    weight: function(feature){
-        var weightField = 'tot';
-        var featureWeight = feature.get(weightField);
-        var maxWeight = 2830;
-        var calibratedWeight = featureWeight/maxWeight;
-        return calibratedWeight;
-    },
-                title: 'Centroids'
-            });
+    title: 'Voting_wojewodztwa<br />\
+    <img src="styles/legend/Voting_wojewodztwa_11_0.png" /> KO<br />' });
+var lyr_Population_density_12 = new ol.layer.Image({
+        opacity: 1,
+        
+    title: 'Population_density<br />\
+    <img src="styles/legend/Population_density_12_0.png" /> 0,0000<br />\
+    <img src="styles/legend/Population_density_12_1.png" /> 1505,8777<br />\
+    <img src="styles/legend/Population_density_12_2.png" /> 3011,7630<br />\
+    <img src="styles/legend/Population_density_12_3.png" /> 4517,6407<br />\
+    <img src="styles/legend/Population_density_12_4.png" /> 6023,5260<br />\
+    <img src="styles/legend/Population_density_12_5.png" /> 7529,4037<br />\
+    <img src="styles/legend/Population_density_12_6.png" /> 9035,2813<br />\
+    <img src="styles/legend/Population_density_12_7.png" /> 10541,1743<br />\
+    <img src="styles/legend/Population_density_12_8.png" /> 12047,0674<br />\
+    <img src="styles/legend/Population_density_12_9.png" /> 13552,9604<br />\
+    <img src="styles/legend/Population_density_12_10.png" /> 15058,7766<br />\
+    <img src="styles/legend/Population_density_12_11.png" /> 16564,6696<br />\
+    <img src="styles/legend/Population_density_12_12.png" /> 18070,5627<br />\
+    <img src="styles/legend/Population_density_12_13.png" /> 19576,4557<br />\
+    <img src="styles/legend/Population_density_12_14.png" /> 21082,3487<br />\
+    <img src="styles/legend/Population_density_12_15.png" /> 22588,2417<br />\
+    <img src="styles/legend/Population_density_12_16.png" /> 24094,0579<br />\
+    <img src="styles/legend/Population_density_12_17.png" /> 25599,9510<br />\
+    <img src="styles/legend/Population_density_12_18.png" /> 27105,8440<br />\
+    <img src="styles/legend/Population_density_12_19.png" /> 28611,7370<br />\
+    <img src="styles/legend/Population_density_12_20.png" /> 30117,6300<br />\
+    <img src="styles/legend/Population_density_12_21.png" /> 31623,5230<br />\
+    <img src="styles/legend/Population_density_12_22.png" /> 33129,4161<br />\
+    <img src="styles/legend/Population_density_12_23.png" /> 34635,2323<br />\
+    <img src="styles/legend/Population_density_12_24.png" /> 36141,1253<br />\
+    <img src="styles/legend/Population_density_12_25.png" /> 37647,0183<br />\
+    <img src="styles/legend/Population_density_12_26.png" /> 39152,9114<br />\
+    <img src="styles/legend/Population_density_12_27.png" /> 40658,8044<br />\
+    <img src="styles/legend/Population_density_12_28.png" /> 42164,6974<br />\
+    <img src="styles/legend/Population_density_12_29.png" /> 43670,5136<br />\
+    <img src="styles/legend/Population_density_12_30.png" /> 45176,4066<br />\
+    <img src="styles/legend/Population_density_12_31.png" /> 46682,2997<br />\
+    <img src="styles/legend/Population_density_12_32.png" /> 48188,1927<br />\
+    <img src="styles/legend/Population_density_12_33.png" /> 49694,0857<br />\
+    <img src="styles/legend/Population_density_12_34.png" /> 51199,9787<br />\
+    <img src="styles/legend/Population_density_12_35.png" /> 52705,8717<br />\
+    <img src="styles/legend/Population_density_12_36.png" /> 54211,6880<br />\
+    <img src="styles/legend/Population_density_12_37.png" /> 55717,5810<br />\
+    <img src="styles/legend/Population_density_12_38.png" /> 57223,4740<br />\
+    <img src="styles/legend/Population_density_12_39.png" /> 58729,3670<br />\
+    <img src="styles/legend/Population_density_12_40.png" /> 60235,2601<br />\
+    <img src="styles/legend/Population_density_12_41.png" /> 61741,1531<br />\
+    <img src="styles/legend/Population_density_12_42.png" /> 63246,9693<br />\
+    <img src="styles/legend/Population_density_12_43.png" /> 64752,8623<br />\
+    <img src="styles/legend/Population_density_12_44.png" /> 66258,7553<br />\
+    <img src="styles/legend/Population_density_12_45.png" /> 67764,6484<br />\
+    <img src="styles/legend/Population_density_12_46.png" /> 69270,5414<br />\
+    <img src="styles/legend/Population_density_12_47.png" /> 70776,4344<br />\
+    <img src="styles/legend/Population_density_12_48.png" /> 72282,2506<br />\
+    <img src="styles/legend/Population_density_12_49.png" /> 73788,1436<br />\
+    <img src="styles/legend/Population_density_12_50.png" /> 75294,0367<br />\
+    <img src="styles/legend/Population_density_12_51.png" /> 76799,9297<br />' ,
+        
+        
+        source: new ol.source.ImageStatic({
+            url: "./layers/Population_density_12.png",
+            attributions: ' ',
+            projection: 'EPSG:3857',
+            alwaysInRange: true,
+            imageExtent: [1999858.060147, 6335829.532161, 2230745.155432, 6644346.227994]
+        })
+    });
 var format_Data_agregate_log_gis_13 = new ol.format.GeoJSON();
 var features_Data_agregate_log_gis_13 = format_Data_agregate_log_gis_13.readFeatures(json_Data_agregate_log_gis_13, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -223,359 +266,349 @@ var lyr_Data_agregate_log_gis_13 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/Data_agregate_log_gis_13.png" /> Data_agregate_log_gis'
             });
-var lyr_Generationagregateheatmap_14 = new ol.layer.Image({
+var lyr_generation_agregat_logarithmic_heat_14 = new ol.layer.Image({
         opacity: 1,
         
-    title: 'Generation agregate heatmap<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_0.png" /> 0,0000<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_1.png" /> 0,2215<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_2.png" /> 0,4430<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_3.png" /> 0,6645<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_4.png" /> 0,8861<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_5.png" /> 1,1076<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_6.png" /> 1,3291<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_7.png" /> 1,5506<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_8.png" /> 1,7721<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_9.png" /> 1,9936<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_10.png" /> 2,2151<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_11.png" /> 2,4367<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_12.png" /> 2,6582<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_13.png" /> 2,8797<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_14.png" /> 3,1012<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_15.png" /> 3,3227<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_16.png" /> 3,5442<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_17.png" /> 3,7657<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_18.png" /> 3,9873<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_19.png" /> 4,2088<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_20.png" /> 4,4303<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_21.png" /> 4,6518<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_22.png" /> 4,8733<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_23.png" /> 5,0948<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_24.png" /> 5,3163<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_25.png" /> 5,5379<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_26.png" /> 5,7594<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_27.png" /> 5,9809<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_28.png" /> 6,2024<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_29.png" /> 6,4239<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_30.png" /> 6,6454<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_31.png" /> 6,8669<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_32.png" /> 7,0885<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_33.png" /> 7,3100<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_34.png" /> 7,5315<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_35.png" /> 7,7530<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_36.png" /> 7,9745<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_37.png" /> 8,1960<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_38.png" /> 8,4176<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_39.png" /> 8,6391<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_40.png" /> 8,8606<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_41.png" /> 9,0821<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_42.png" /> 9,3036<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_43.png" /> 9,5251<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_44.png" /> 9,7466<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_45.png" /> 9,9682<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_46.png" /> 10,1897<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_47.png" /> 10,4112<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_48.png" /> 10,6327<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_49.png" /> 10,8542<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_50.png" /> 11,0757<br />\
-    <img src="styles/legend/Generationagregateheatmap_14_51.png" /> 11,2972<br />' ,
+    title: 'generation_agregat_logarithmic_heat<br />\
+    <img src="styles/legend/generation_agregat_logarithmic_heat_14_0.png" /> 0,0000<br />\
+    <img src="styles/legend/generation_agregat_logarithmic_heat_14_1.png" /> 3,1292<br />\
+    <img src="styles/legend/generation_agregat_logarithmic_heat_14_2.png" /> 6,2584<br />\
+    <img src="styles/legend/generation_agregat_logarithmic_heat_14_3.png" /> 9,3877<br />\
+    <img src="styles/legend/generation_agregat_logarithmic_heat_14_4.png" /> 12,5169<br />' ,
         
         
         source: new ol.source.ImageStatic({
-            url: "./layers/Generationagregateheatmap_14.png",
+            url: "./layers/generation_agregat_logarithmic_heat_14.png",
             attributions: ' ',
             projection: 'EPSG:3857',
             alwaysInRange: true,
-            imageExtent: [1999008.623971, 6382463.853982, 2227818.044932, 6655824.193320]
+            imageExtent: [1994555.844339, 6375365.453956, 2232445.596165, 6662932.690077]
         })
     });
-var format_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15 = new ol.format.GeoJSON();
-var features_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15 = format_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15.readFeatures(json_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15, 
+var lyr_generation_agregat_heat_15 = new ol.layer.Image({
+        opacity: 1,
+        
+    title: 'generation_agregat_heat<br />\
+    <img src="styles/legend/generation_agregat_heat_15_0.png" /> 0,0000<br />\
+    <img src="styles/legend/generation_agregat_heat_15_1.png" /> 5,1122<br />\
+    <img src="styles/legend/generation_agregat_heat_15_2.png" /> 10,2244<br />\
+    <img src="styles/legend/generation_agregat_heat_15_3.png" /> 15,3366<br />\
+    <img src="styles/legend/generation_agregat_heat_15_4.png" /> 20,4488<br />' ,
+        
+        
+        source: new ol.source.ImageStatic({
+            url: "./layers/generation_agregat_heat_15.png",
+            attributions: ' ',
+            projection: 'EPSG:3857',
+            alwaysInRange: true,
+            imageExtent: [1994555.844339, 6375365.453956, 2232445.596165, 6662932.690077]
+        })
+    });
+var format_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16 = new ol.format.GeoJSON();
+var features_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16 = format_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16.readFeatures(json_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15 = new ol.source.Vector({
+var jsonSource_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15.addFeatures(features_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15);
-var lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15 = new ol.layer.Vector({
+jsonSource_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16.addFeatures(features_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16);
+var lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15, 
-                style: style_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15,
+                source:jsonSource_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16, 
+                style: style_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16,
                 popuplayertitle: 'Global-Wind-Power-Tracker-February-2026_prep_gis_slaskie copy',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15.png" /> Global-Wind-Power-Tracker-February-2026_prep_gis_slaskie copy'
+                title: '<img src="styles/legend/GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16.png" /> Global-Wind-Power-Tracker-February-2026_prep_gis_slaskie copy'
             });
-var format_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16 = new ol.format.GeoJSON();
-var features_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16 = format_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16.readFeatures(json_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16, 
+var format_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17 = new ol.format.GeoJSON();
+var features_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17 = format_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17.readFeatures(json_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16 = new ol.source.Vector({
+var jsonSource_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16.addFeatures(features_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16);
-var lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16 = new ol.layer.Vector({
+jsonSource_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17.addFeatures(features_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17);
+var lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16, 
-                style: style_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16,
+                source:jsonSource_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17, 
+                style: style_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17,
                 popuplayertitle: 'Global-Solar-Power-Tracker-February-2026_gis_slaskie_only',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16.png" /> Global-Solar-Power-Tracker-February-2026_gis_slaskie_only'
+                title: '<img src="styles/legend/GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17.png" /> Global-Solar-Power-Tracker-February-2026_gis_slaskie_only'
             });
-var format_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17 = new ol.format.GeoJSON();
-var features_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17 = format_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17.readFeatures(json_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17, 
+var format_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18 = new ol.format.GeoJSON();
+var features_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18 = format_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18.readFeatures(json_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17 = new ol.source.Vector({
+var jsonSource_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17.addFeatures(features_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17);
-var lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17 = new ol.layer.Vector({
+jsonSource_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18.addFeatures(features_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18);
+var lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17, 
-                style: style_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17,
+                source:jsonSource_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18, 
+                style: style_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18,
                 popuplayertitle: 'Global-Oil-and-Gas-Plant-Tracker-GOGPT-January-2026_gis_slaskie copy',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17.png" /> Global-Oil-and-Gas-Plant-Tracker-GOGPT-January-2026_gis_slaskie copy'
+                title: '<img src="styles/legend/GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18.png" /> Global-Oil-and-Gas-Plant-Tracker-GOGPT-January-2026_gis_slaskie copy'
             });
-var format_GlobalNuclearPowerTrackerSeptember2025_giscopy_18 = new ol.format.GeoJSON();
-var features_GlobalNuclearPowerTrackerSeptember2025_giscopy_18 = format_GlobalNuclearPowerTrackerSeptember2025_giscopy_18.readFeatures(json_GlobalNuclearPowerTrackerSeptember2025_giscopy_18, 
+var format_GlobalNuclearPowerTrackerSeptember2025_giscopy_19 = new ol.format.GeoJSON();
+var features_GlobalNuclearPowerTrackerSeptember2025_giscopy_19 = format_GlobalNuclearPowerTrackerSeptember2025_giscopy_19.readFeatures(json_GlobalNuclearPowerTrackerSeptember2025_giscopy_19, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalNuclearPowerTrackerSeptember2025_giscopy_18 = new ol.source.Vector({
+var jsonSource_GlobalNuclearPowerTrackerSeptember2025_giscopy_19 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalNuclearPowerTrackerSeptember2025_giscopy_18.addFeatures(features_GlobalNuclearPowerTrackerSeptember2025_giscopy_18);
-var lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_18 = new ol.layer.Vector({
+jsonSource_GlobalNuclearPowerTrackerSeptember2025_giscopy_19.addFeatures(features_GlobalNuclearPowerTrackerSeptember2025_giscopy_19);
+var lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_19 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalNuclearPowerTrackerSeptember2025_giscopy_18, 
-                style: style_GlobalNuclearPowerTrackerSeptember2025_giscopy_18,
+                source:jsonSource_GlobalNuclearPowerTrackerSeptember2025_giscopy_19, 
+                style: style_GlobalNuclearPowerTrackerSeptember2025_giscopy_19,
                 popuplayertitle: 'Global-Nuclear-Power-Tracker-September-2025_gis copy',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalNuclearPowerTrackerSeptember2025_giscopy_18.png" /> Global-Nuclear-Power-Tracker-September-2025_gis copy'
+                title: '<img src="styles/legend/GlobalNuclearPowerTrackerSeptember2025_giscopy_19.png" /> Global-Nuclear-Power-Tracker-September-2025_gis copy'
             });
-var format_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19 = new ol.format.GeoJSON();
-var features_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19 = format_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19.readFeatures(json_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19, 
+var format_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20 = new ol.format.GeoJSON();
+var features_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20 = format_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20.readFeatures(json_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19 = new ol.source.Vector({
+var jsonSource_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19.addFeatures(features_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19);
-var lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19 = new ol.layer.Vector({
+jsonSource_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20.addFeatures(features_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20);
+var lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19, 
-                style: style_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19,
+                source:jsonSource_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20, 
+                style: style_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20,
                 popuplayertitle: 'Global-Hydropower-Tracker-April-2025_gis_slaskie copy',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19.png" /> Global-Hydropower-Tracker-April-2025_gis_slaskie copy'
+                title: '<img src="styles/legend/GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20.png" /> Global-Hydropower-Tracker-April-2025_gis_slaskie copy'
             });
-var format_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20 = new ol.format.GeoJSON();
-var features_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20 = format_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20.readFeatures(json_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20, 
+var format_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21 = new ol.format.GeoJSON();
+var features_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21 = format_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21.readFeatures(json_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20 = new ol.source.Vector({
+var jsonSource_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20.addFeatures(features_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20);
-var lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20 = new ol.layer.Vector({
+jsonSource_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21.addFeatures(features_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21);
+var lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20, 
-                style: style_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20,
+                source:jsonSource_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21, 
+                style: style_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21,
                 popuplayertitle: 'Global-Coal-Plant-Tracker-January-2026_gis_slaskie copy',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20.png" /> Global-Coal-Plant-Tracker-January-2026_gis_slaskie copy'
+                title: '<img src="styles/legend/GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21.png" /> Global-Coal-Plant-Tracker-January-2026_gis_slaskie copy'
             });
-var format_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21 = new ol.format.GeoJSON();
-var features_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21 = format_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21.readFeatures(json_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21, 
+var format_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22 = new ol.format.GeoJSON();
+var features_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22 = format_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22.readFeatures(json_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21 = new ol.source.Vector({
+var jsonSource_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21.addFeatures(features_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21);
-var lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21 = new ol.layer.Vector({
+jsonSource_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22.addFeatures(features_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22);
+var lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21, 
-                style: style_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21,
+                source:jsonSource_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22, 
+                style: style_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22,
                 popuplayertitle: 'Global-Coal-Mine-Tracker-May-2025-V2_non_operating_gis_slaskie copy',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21.png" /> Global-Coal-Mine-Tracker-May-2025-V2_non_operating_gis_slaskie copy'
+                title: '<img src="styles/legend/GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22.png" /> Global-Coal-Mine-Tracker-May-2025-V2_non_operating_gis_slaskie copy'
             });
-var format_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22 = new ol.format.GeoJSON();
-var features_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22 = format_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22.readFeatures(json_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22, 
+var format_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23 = new ol.format.GeoJSON();
+var features_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23 = format_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23.readFeatures(json_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22 = new ol.source.Vector({
+var jsonSource_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22.addFeatures(features_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22);
-var lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22 = new ol.layer.Vector({
+jsonSource_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23.addFeatures(features_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23);
+var lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22, 
-                style: style_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22,
+                source:jsonSource_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23, 
+                style: style_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23,
                 popuplayertitle: 'Global-Coal-Mine-Tracker-May-2025-V2_operating_gis_slaskie copy',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22.png" /> Global-Coal-Mine-Tracker-May-2025-V2_operating_gis_slaskie copy'
+                title: '<img src="styles/legend/GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23.png" /> Global-Coal-Mine-Tracker-May-2025-V2_operating_gis_slaskie copy'
             });
-var format_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23 = new ol.format.GeoJSON();
-var features_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23 = format_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23.readFeatures(json_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23, 
+var format_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24 = new ol.format.GeoJSON();
+var features_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24 = format_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24.readFeatures(json_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23 = new ol.source.Vector({
+var jsonSource_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23.addFeatures(features_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23);
-var lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23 = new ol.layer.Vector({
+jsonSource_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24.addFeatures(features_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24);
+var lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23, 
-                style: style_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23,
+                source:jsonSource_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24, 
+                style: style_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24,
                 popuplayertitle: 'Global-Cement-and-Concrete-Tracker_July-2025_gis_slaskie copy',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23.png" /> Global-Cement-and-Concrete-Tracker_July-2025_gis_slaskie copy'
+                title: '<img src="styles/legend/GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24.png" /> Global-Cement-and-Concrete-Tracker_July-2025_gis_slaskie copy'
             });
-var format_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24 = new ol.format.GeoJSON();
-var features_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24 = format_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24.readFeatures(json_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24, 
+var format_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25 = new ol.format.GeoJSON();
+var features_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25 = format_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25.readFeatures(json_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24 = new ol.source.Vector({
+var jsonSource_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24.addFeatures(features_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24);
-var lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24 = new ol.layer.Vector({
+jsonSource_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25.addFeatures(features_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25);
+var lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24, 
-                style: style_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24,
+                source:jsonSource_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25, 
+                style: style_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25,
                 popuplayertitle: 'Global-Bioenergy-Power-Tracker-GBPT-V3_gis_slaskie copy',
                 interactive: true,
-                title: '<img src="styles/legend/GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24.png" /> Global-Bioenergy-Power-Tracker-GBPT-V3_gis_slaskie copy'
+                title: '<img src="styles/legend/GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25.png" /> Global-Bioenergy-Power-Tracker-GBPT-V3_gis_slaskie copy'
             });
-var format_Grid_25 = new ol.format.GeoJSON();
-var features_Grid_25 = format_Grid_25.readFeatures(json_Grid_25, 
+var format_SilesianVoivodeshipBoundaries_26 = new ol.format.GeoJSON();
+var features_SilesianVoivodeshipBoundaries_26 = format_SilesianVoivodeshipBoundaries_26.readFeatures(json_SilesianVoivodeshipBoundaries_26, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Grid_25 = new ol.source.Vector({
+var jsonSource_SilesianVoivodeshipBoundaries_26 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Grid_25.addFeatures(features_Grid_25);
-var lyr_Grid_25 = new ol.layer.Vector({
+jsonSource_SilesianVoivodeshipBoundaries_26.addFeatures(features_SilesianVoivodeshipBoundaries_26);
+var lyr_SilesianVoivodeshipBoundaries_26 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Grid_25, 
-                style: style_Grid_25,
+                source:jsonSource_SilesianVoivodeshipBoundaries_26, 
+                style: style_SilesianVoivodeshipBoundaries_26,
+                popuplayertitle: 'Silesian Voivodeship Boundaries',
+                interactive: false,
+                title: '<img src="styles/legend/SilesianVoivodeshipBoundaries_26.png" /> Silesian Voivodeship Boundaries'
+            });
+var format_Grid_27 = new ol.format.GeoJSON();
+var features_Grid_27 = format_Grid_27.readFeatures(json_Grid_27, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Grid_27 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Grid_27.addFeatures(features_Grid_27);
+var lyr_Grid_27 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Grid_27, 
+                style: style_Grid_27,
                 popuplayertitle: 'Grid',
-                interactive: true,
-                title: '<img src="styles/legend/Grid_25.png" /> Grid'
+                interactive: false,
+                title: '<img src="styles/legend/Grid_27.png" /> Grid'
             });
 var group_Bioenergypower = new ol.layer.Group({
-                                layers: [lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24,],
-                                fold: 'close',
+                                layers: [lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25,],
+                                fold: 'open',
                                 title: 'Bioenergy power'});
 var group_Cementandconcrete = new ol.layer.Group({
-                                layers: [lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23,],
-                                fold: 'close',
+                                layers: [lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24,],
+                                fold: 'open',
                                 title: 'Cement and concrete'});
 var group_Coalmineoperating = new ol.layer.Group({
-                                layers: [lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22,],
-                                fold: 'close',
+                                layers: [lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23,],
+                                fold: 'open',
                                 title: 'Coal mine // operating'});
 var group_Coalminenonoperating = new ol.layer.Group({
-                                layers: [lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21,],
-                                fold: 'close',
+                                layers: [lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22,],
+                                fold: 'open',
                                 title: 'Coal mine // non-operating'});
 var group_Coalpower = new ol.layer.Group({
-                                layers: [lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20,],
-                                fold: 'close',
+                                layers: [lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21,],
+                                fold: 'open',
                                 title: 'Coal power'});
 var group_Hydropower = new ol.layer.Group({
-                                layers: [lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19,],
-                                fold: 'close',
+                                layers: [lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20,],
+                                fold: 'open',
                                 title: 'Hydro power'});
 var group_Nuclearpower = new ol.layer.Group({
-                                layers: [lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_18,],
-                                fold: 'close',
+                                layers: [lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_19,],
+                                fold: 'open',
                                 title: 'Nuclear power'});
 var group_Oilandgaspower = new ol.layer.Group({
-                                layers: [lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17,],
-                                fold: 'close',
+                                layers: [lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18,],
+                                fold: 'open',
                                 title: 'Oil and gas power'});
 var group_Solarpower = new ol.layer.Group({
-                                layers: [lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16,],
-                                fold: 'close',
+                                layers: [lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17,],
+                                fold: 'open',
                                 title: 'Solar power'});
 var group_Windpower = new ol.layer.Group({
-                                layers: [lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15,],
-                                fold: 'close',
+                                layers: [lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16,],
+                                fold: 'open',
                                 title: 'Wind power'});
 var group_Generation_agregate = new ol.layer.Group({
-                                layers: [lyr_Data_agregate_log_gis_13,lyr_Generationagregateheatmap_14,],
+                                layers: [lyr_Data_agregate_log_gis_13,lyr_generation_agregat_logarithmic_heat_14,lyr_generation_agregat_heat_15,],
                                 fold: 'open',
                                 title: 'Generation_agregate'});
 var group_Heatmap = new ol.layer.Group({
-                                layers: [lyr_Centroids_12,],
+                                layers: [lyr_Population_density_12,],
                                 fold: 'close',
                                 title: 'Heatmap'});
 
-lyr_SRTMGL1terraindata_0.setVisible(true);lyr_Dark_1.setVisible(true);lyr_Contours_2.setVisible(true);lyr_geoBoundariesSVKADM1_3.setVisible(true);lyr_geoBoundariesCZEADM1_4.setVisible(true);lyr_geoBoundariesPOLADM2_5.setVisible(true);lyr_geoBoundariesPOLADM1_6.setVisible(true);lyr_geoBoundariesSVKADM0_7.setVisible(true);lyr_geoBoundariesCZEADM0_8.setVisible(true);lyr_gminy_9.setVisible(true);lyr_powiaty_10.setVisible(true);lyr_wojewodztwa_11.setVisible(true);lyr_Centroids_12.setVisible(true);lyr_Data_agregate_log_gis_13.setVisible(true);lyr_Generationagregateheatmap_14.setVisible(true);lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15.setVisible(true);lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16.setVisible(true);lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17.setVisible(true);lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_18.setVisible(true);lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19.setVisible(true);lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20.setVisible(true);lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21.setVisible(true);lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22.setVisible(true);lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23.setVisible(true);lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24.setVisible(true);lyr_Grid_25.setVisible(true);
-var layersList = [lyr_SRTMGL1terraindata_0,lyr_Dark_1,lyr_Contours_2,lyr_geoBoundariesSVKADM1_3,lyr_geoBoundariesCZEADM1_4,lyr_geoBoundariesPOLADM2_5,lyr_geoBoundariesPOLADM1_6,lyr_geoBoundariesSVKADM0_7,lyr_geoBoundariesCZEADM0_8,lyr_gminy_9,lyr_powiaty_10,lyr_wojewodztwa_11,group_Heatmap,group_Generation_agregate,group_Windpower,group_Solarpower,group_Oilandgaspower,group_Nuclearpower,group_Hydropower,group_Coalpower,group_Coalminenonoperating,group_Coalmineoperating,group_Cementandconcrete,group_Bioenergypower,lyr_Grid_25];
+lyr_SRTMGL1terraindata_0.setVisible(true);lyr_Dark_1.setVisible(true);lyr_Contours_2.setVisible(true);lyr_geoBoundariesSVKADM1_3.setVisible(true);lyr_geoBoundariesCZEADM1_4.setVisible(true);lyr_geoBoundariesPOLADM2_5.setVisible(true);lyr_geoBoundariesPOLADM1_6.setVisible(true);lyr_geoBoundariesSVKADM0_7.setVisible(true);lyr_geoBoundariesCZEADM0_8.setVisible(true);lyr_Voting_gminy_9.setVisible(true);lyr_Voting_powiaty_10.setVisible(true);lyr_Voting_wojewodztwa_11.setVisible(true);lyr_Population_density_12.setVisible(true);lyr_Data_agregate_log_gis_13.setVisible(true);lyr_generation_agregat_logarithmic_heat_14.setVisible(true);lyr_generation_agregat_heat_15.setVisible(true);lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16.setVisible(true);lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17.setVisible(true);lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18.setVisible(true);lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_19.setVisible(true);lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20.setVisible(true);lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21.setVisible(true);lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22.setVisible(true);lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23.setVisible(true);lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24.setVisible(true);lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25.setVisible(true);lyr_SilesianVoivodeshipBoundaries_26.setVisible(true);lyr_Grid_27.setVisible(true);
+var layersList = [lyr_SRTMGL1terraindata_0,lyr_Dark_1,lyr_Contours_2,lyr_geoBoundariesSVKADM1_3,lyr_geoBoundariesCZEADM1_4,lyr_geoBoundariesPOLADM2_5,lyr_geoBoundariesPOLADM1_6,lyr_geoBoundariesSVKADM0_7,lyr_geoBoundariesCZEADM0_8,lyr_Voting_gminy_9,lyr_Voting_powiaty_10,lyr_Voting_wojewodztwa_11,group_Heatmap,group_Generation_agregate,group_Windpower,group_Solarpower,group_Oilandgaspower,group_Nuclearpower,group_Hydropower,group_Coalpower,group_Coalminenonoperating,group_Coalmineoperating,group_Cementandconcrete,group_Bioenergypower,lyr_SilesianVoivodeshipBoundaries_26,lyr_Grid_27];
 lyr_geoBoundariesSVKADM1_3.set('fieldAliases', {'shapeName': 'shapeName', 'shapeISO': 'shapeISO', 'shapeID': 'shapeID', 'shapeGroup': 'shapeGroup', 'shapeType': 'shapeType', });
 lyr_geoBoundariesCZEADM1_4.set('fieldAliases', {'shapeName': 'shapeName', 'shapeISO': 'shapeISO', 'shapeID': 'shapeID', 'shapeGroup': 'shapeGroup', 'shapeType': 'shapeType', });
-lyr_geoBoundariesPOLADM2_5.set('fieldAliases', {'shapeName': 'shapeName', 'shapeISO': 'shapeISO', 'shapeID': 'shapeID', 'shapeGroup': 'shapeGroup', 'shapeType': 'shapeType', });
+lyr_geoBoundariesPOLADM2_5.set('fieldAliases', {'gml_id': 'gml_id', 'JPT_SJR_KO': 'JPT_SJR_KO', 'JPT_POWIER': 'JPT_POWIER', 'JPT_KOD_JE': 'JPT_KOD_JE', 'JPT_NAZWA_': 'JPT_NAZWA_', 'JPT_ORGAN_': 'JPT_ORGAN_', 'JPT_JOR_ID': 'JPT_JOR_ID', 'WERSJA_OD': 'WERSJA_OD', 'WERSJA_DO': 'WERSJA_DO', 'WAZNY_OD': 'WAZNY_OD', 'WAZNY_DO': 'WAZNY_DO', 'JPT_KOD__1': 'JPT_KOD__1', 'JPT_NAZWA1': 'JPT_NAZWA1', 'JPT_ORGAN1': 'JPT_ORGAN1', 'JPT_WAZNA_': 'JPT_WAZNA_', 'ID_BUFORA_': 'ID_BUFORA_', 'ID_BUFORA1': 'ID_BUFORA1', 'ID_TECHNIC': 'ID_TECHNIC', 'IIP_PRZEST': 'IIP_PRZEST', 'IIP_IDENTY': 'IIP_IDENTY', 'IIP_WERSJA': 'IIP_WERSJA', 'JPT_KJ_IIP': 'JPT_KJ_IIP', 'JPT_KJ_I_1': 'JPT_KJ_I_1', 'JPT_KJ_I_2': 'JPT_KJ_I_2', 'JPT_OPIS': 'JPT_OPIS', 'JPT_SPS_KO': 'JPT_SPS_KO', 'ID_BUFOR_1': 'ID_BUFOR_1', 'JPT_ID': 'JPT_ID', 'JPT_POWI_1': 'JPT_POWI_1', 'JPT_KJ_I_3': 'JPT_KJ_I_3', 'JPT_GEOMET': 'JPT_GEOMET', 'JPT_GEOM_1': 'JPT_GEOM_1', 'SHAPE_LENG': 'SHAPE_LENG', 'SHAPE_AREA': 'SHAPE_AREA', 'REGON': 'REGON', 'RODZAJ': 'RODZAJ', 'winner': 'winner', '2024-sejmiki-po-powiatach-proc_Powiat': '2024-sejmiki-po-powiatach-proc_Powiat', '2024-sejmiki-po-powiatach-proc_Województwo': '2024-sejmiki-po-powiatach-proc_Województwo', '2024-sejmiki-po-powiatach-proc_KO': '2024-sejmiki-po-powiatach-proc_KO', '2024-sejmiki-po-powiatach-proc_PiS': '2024-sejmiki-po-powiatach-proc_PiS', '2024-sejmiki-po-powiatach-proc_Liczba obwodów': '2024-sejmiki-po-powiatach-proc_Liczba obwodów', });
 lyr_geoBoundariesPOLADM1_6.set('fieldAliases', {'shapeName': 'shapeName', 'shapeISO': 'shapeISO', 'shapeID': 'shapeID', 'shapeGroup': 'shapeGroup', 'shapeType': 'shapeType', });
 lyr_geoBoundariesSVKADM0_7.set('fieldAliases', {'shapeName': 'shapeName', 'shapeISO': 'shapeISO', 'shapeID': 'shapeID', 'shapeGroup': 'shapeGroup', 'shapeType': 'shapeType', });
 lyr_geoBoundariesCZEADM0_8.set('fieldAliases', {'shapeName': 'shapeName', 'shapeISO': 'shapeISO', 'shapeID': 'shapeID', 'shapeGroup': 'shapeGroup', 'shapeType': 'shapeType', });
-lyr_gminy_9.set('fieldAliases', {'gml_id': 'gml_id', 'JPT_SJR_KO': 'JPT_SJR_KO', 'JPT_POWIER': 'JPT_POWIER', 'JPT_KOD_JE': 'JPT_KOD_JE', 'JPT_NAZWA_': 'JPT_NAZWA_', 'JPT_ORGAN_': 'JPT_ORGAN_', 'JPT_JOR_ID': 'JPT_JOR_ID', 'WERSJA_OD': 'WERSJA_OD', 'WERSJA_DO': 'WERSJA_DO', 'WAZNY_OD': 'WAZNY_OD', 'WAZNY_DO': 'WAZNY_DO', 'JPT_KOD__1': 'JPT_KOD__1', 'JPT_NAZWA1': 'JPT_NAZWA1', 'JPT_ORGAN1': 'JPT_ORGAN1', 'JPT_WAZNA_': 'JPT_WAZNA_', 'ID_BUFORA_': 'ID_BUFORA_', 'ID_BUFORA1': 'ID_BUFORA1', 'ID_TECHNIC': 'ID_TECHNIC', 'IIP_PRZEST': 'IIP_PRZEST', 'IIP_IDENTY': 'IIP_IDENTY', 'IIP_WERSJA': 'IIP_WERSJA', 'JPT_KJ_IIP': 'JPT_KJ_IIP', 'JPT_KJ_I_1': 'JPT_KJ_I_1', 'JPT_KJ_I_2': 'JPT_KJ_I_2', 'JPT_OPIS': 'JPT_OPIS', 'JPT_SPS_KO': 'JPT_SPS_KO', 'ID_BUFOR_1': 'ID_BUFOR_1', 'JPT_ID': 'JPT_ID', 'JPT_POWI_1': 'JPT_POWI_1', 'JPT_KJ_I_3': 'JPT_KJ_I_3', 'JPT_GEOMET': 'JPT_GEOMET', 'JPT_GEOM_1': 'JPT_GEOM_1', 'SHAPE_LENG': 'SHAPE_LENG', 'SHAPE_AREA': 'SHAPE_AREA', 'REGON': 'REGON', 'RODZAJ': 'RODZAJ', 'Winner_win': 'Winner_win', '2024-sejmiki-po-gminach-proc_v_Rodzaj jednostki': '2024-sejmiki-po-gminach-proc_v_Rodzaj jednostki', '2024-sejmiki-po-gminach-proc_v_Gmina': '2024-sejmiki-po-gminach-proc_v_Gmina', '2024-sejmiki-po-gminach-proc_v_Powiat': '2024-sejmiki-po-gminach-proc_v_Powiat', '2024-sejmiki-po-gminach-proc_v_Województwo': '2024-sejmiki-po-gminach-proc_v_Województwo', '2024-sejmiki-po-gminach-proc_v_KO': '2024-sejmiki-po-gminach-proc_v_KO', '2024-sejmiki-po-gminach-proc_v_PSL': '2024-sejmiki-po-gminach-proc_v_PSL', '2024-sejmiki-po-gminach-proc_v_PiS': '2024-sejmiki-po-gminach-proc_v_PiS', '2024-sejmiki-po-gminach-proc_v_Liczba obwodów': '2024-sejmiki-po-gminach-proc_v_Liczba obwodów', });
-lyr_powiaty_10.set('fieldAliases', {'gml_id': 'gml_id', 'JPT_SJR_KO': 'JPT_SJR_KO', 'JPT_POWIER': 'JPT_POWIER', 'JPT_KOD_JE': 'JPT_KOD_JE', 'JPT_NAZWA_': 'JPT_NAZWA_', 'JPT_ORGAN_': 'JPT_ORGAN_', 'JPT_JOR_ID': 'JPT_JOR_ID', 'WERSJA_OD': 'WERSJA_OD', 'WERSJA_DO': 'WERSJA_DO', 'WAZNY_OD': 'WAZNY_OD', 'WAZNY_DO': 'WAZNY_DO', 'JPT_KOD__1': 'JPT_KOD__1', 'JPT_NAZWA1': 'JPT_NAZWA1', 'JPT_ORGAN1': 'JPT_ORGAN1', 'JPT_WAZNA_': 'JPT_WAZNA_', 'ID_BUFORA_': 'ID_BUFORA_', 'ID_BUFORA1': 'ID_BUFORA1', 'ID_TECHNIC': 'ID_TECHNIC', 'IIP_PRZEST': 'IIP_PRZEST', 'IIP_IDENTY': 'IIP_IDENTY', 'IIP_WERSJA': 'IIP_WERSJA', 'JPT_KJ_IIP': 'JPT_KJ_IIP', 'JPT_KJ_I_1': 'JPT_KJ_I_1', 'JPT_KJ_I_2': 'JPT_KJ_I_2', 'JPT_OPIS': 'JPT_OPIS', 'JPT_SPS_KO': 'JPT_SPS_KO', 'ID_BUFOR_1': 'ID_BUFOR_1', 'JPT_ID': 'JPT_ID', 'JPT_POWI_1': 'JPT_POWI_1', 'JPT_KJ_I_3': 'JPT_KJ_I_3', 'JPT_GEOMET': 'JPT_GEOMET', 'JPT_GEOM_1': 'JPT_GEOM_1', 'SHAPE_LENG': 'SHAPE_LENG', 'SHAPE_AREA': 'SHAPE_AREA', 'REGON': 'REGON', 'RODZAJ': 'RODZAJ', 'winner': 'winner', '2024-sejmiki-po-powiatach-proc_Powiat': '2024-sejmiki-po-powiatach-proc_Powiat', '2024-sejmiki-po-powiatach-proc_Województwo': '2024-sejmiki-po-powiatach-proc_Województwo', '2024-sejmiki-po-powiatach-proc_KO': '2024-sejmiki-po-powiatach-proc_KO', '2024-sejmiki-po-powiatach-proc_PiS': '2024-sejmiki-po-powiatach-proc_PiS', '2024-sejmiki-po-powiatach-proc_Liczba obwodów': '2024-sejmiki-po-powiatach-proc_Liczba obwodów', });
-lyr_wojewodztwa_11.set('fieldAliases', {'gml_id': 'gml_id', 'JPT_SJR_KO': 'JPT_SJR_KO', 'JPT_POWIER': 'JPT_POWIER', 'JPT_KOD_JE': 'JPT_KOD_JE', 'JPT_NAZWA_': 'JPT_NAZWA_', 'JPT_ORGAN_': 'JPT_ORGAN_', 'JPT_JOR_ID': 'JPT_JOR_ID', 'WERSJA_OD': 'WERSJA_OD', 'WERSJA_DO': 'WERSJA_DO', 'WAZNY_OD': 'WAZNY_OD', 'WAZNY_DO': 'WAZNY_DO', 'JPT_KOD__1': 'JPT_KOD__1', 'JPT_NAZWA1': 'JPT_NAZWA1', 'JPT_ORGAN1': 'JPT_ORGAN1', 'JPT_WAZNA_': 'JPT_WAZNA_', 'ID_BUFORA_': 'ID_BUFORA_', 'ID_BUFORA1': 'ID_BUFORA1', 'ID_TECHNIC': 'ID_TECHNIC', 'IIP_PRZEST': 'IIP_PRZEST', 'IIP_IDENTY': 'IIP_IDENTY', 'IIP_WERSJA': 'IIP_WERSJA', 'JPT_KJ_IIP': 'JPT_KJ_IIP', 'JPT_KJ_I_1': 'JPT_KJ_I_1', 'JPT_KJ_I_2': 'JPT_KJ_I_2', 'JPT_OPIS': 'JPT_OPIS', 'JPT_SPS_KO': 'JPT_SPS_KO', 'ID_BUFOR_1': 'ID_BUFOR_1', 'JPT_ID': 'JPT_ID', 'JPT_POWI_1': 'JPT_POWI_1', 'JPT_KJ_I_3': 'JPT_KJ_I_3', 'JPT_GEOMET': 'JPT_GEOMET', 'JPT_GEOM_1': 'JPT_GEOM_1', 'SHAPE_LENG': 'SHAPE_LENG', 'SHAPE_AREA': 'SHAPE_AREA', 'REGON': 'REGON', 'RODZAJ': 'RODZAJ', 'winner': 'winner', '2024-sejmiki-po-wojewodztwach-proc_Województwo': '2024-sejmiki-po-wojewodztwach-proc_Województwo', '2024-sejmiki-po-wojewodztwach-proc_KO': '2024-sejmiki-po-wojewodztwach-proc_KO', '2024-sejmiki-po-wojewodztwach-proc_Liczba obwodów': '2024-sejmiki-po-wojewodztwach-proc_Liczba obwodów', });
+lyr_Voting_gminy_9.set('fieldAliases', {'fid': 'fid', 'JPT_SJR_KO': 'JPT_SJR_KO', 'JPT_POWIER': 'JPT_POWIER', 'JPT_KOD_JE': 'JPT_KOD_JE', 'JPT_NAZWA_': 'JPT_NAZWA_', 'JPT_JOR_ID': 'JPT_JOR_ID', 'WERSJA_OD': 'WERSJA_OD', 'WAZNY_OD': 'WAZNY_OD', 'JPT_ORGAN1': 'JPT_ORGAN1', 'JPT_WAZNA_': 'JPT_WAZNA_', 'ID_BUFORA_': 'ID_BUFORA_', 'ID_TECHNIC': 'ID_TECHNIC', 'IIP_PRZEST': 'IIP_PRZEST', 'IIP_IDENTY': 'IIP_IDENTY', 'IIP_WERSJA': 'IIP_WERSJA', 'JPT_KJ_IIP': 'JPT_KJ_IIP', 'JPT_KJ_I_1': 'JPT_KJ_I_1', 'JPT_SPS_KO': 'JPT_SPS_KO', 'JPT_ID': 'JPT_ID', 'SHAPE_LENG': 'SHAPE_LENG', 'SHAPE_AREA': 'SHAPE_AREA', 'REGON': 'REGON', 'RODZAJ': 'RODZAJ', 'Ele_win': 'Ele_win', '2024-sejmiki-po-gminach-proc_Rodzaj jednostki': '2024-sejmiki-po-gminach-proc_Rodzaj jednostki', '2024-sejmiki-po-gminach-proc_Gmina': '2024-sejmiki-po-gminach-proc_Gmina', '2024-sejmiki-po-gminach-proc_Powiat': '2024-sejmiki-po-gminach-proc_Powiat', '2024-sejmiki-po-gminach-proc_Województwo': '2024-sejmiki-po-gminach-proc_Województwo', '2024-sejmiki-po-gminach-proc_KO': '2024-sejmiki-po-gminach-proc_KO', '2024-sejmiki-po-gminach-proc_PSL': '2024-sejmiki-po-gminach-proc_PSL', '2024-sejmiki-po-gminach-proc_PiS': '2024-sejmiki-po-gminach-proc_PiS', '2024-sejmiki-po-gminach-proc_Liczba obwodów': '2024-sejmiki-po-gminach-proc_Liczba obwodów', });
+lyr_Voting_powiaty_10.set('fieldAliases', {'fid': 'fid', 'JPT_SJR_KO': 'JPT_SJR_KO', 'JPT_POWIER': 'JPT_POWIER', 'JPT_KOD_JE': 'JPT_KOD_JE', 'JPT_NAZWA_': 'JPT_NAZWA_', 'JPT_JOR_ID': 'JPT_JOR_ID', 'WERSJA_OD': 'WERSJA_OD', 'WAZNY_OD': 'WAZNY_OD', 'JPT_ORGAN1': 'JPT_ORGAN1', 'JPT_WAZNA_': 'JPT_WAZNA_', 'ID_BUFORA_': 'ID_BUFORA_', 'ID_BUFORA1': 'ID_BUFORA1', 'ID_TECHNIC': 'ID_TECHNIC', 'IIP_PRZEST': 'IIP_PRZEST', 'IIP_IDENTY': 'IIP_IDENTY', 'IIP_WERSJA': 'IIP_WERSJA', 'JPT_KJ_IIP': 'JPT_KJ_IIP', 'JPT_KJ_I_1': 'JPT_KJ_I_1', 'JPT_SPS_KO': 'JPT_SPS_KO', 'JPT_ID': 'JPT_ID', 'SHAPE_LENG': 'SHAPE_LENG', 'SHAPE_AREA': 'SHAPE_AREA', 'REGON': 'REGON', 'RODZAJ': 'RODZAJ', 'winner': 'winner', '2024-sejmiki-po-powiatach-proc_Powiat': '2024-sejmiki-po-powiatach-proc_Powiat', '2024-sejmiki-po-powiatach-proc_Województwo': '2024-sejmiki-po-powiatach-proc_Województwo', '2024-sejmiki-po-powiatach-proc_KO': '2024-sejmiki-po-powiatach-proc_KO', '2024-sejmiki-po-powiatach-proc_PiS': '2024-sejmiki-po-powiatach-proc_PiS', '2024-sejmiki-po-powiatach-proc_Liczba obwodów': '2024-sejmiki-po-powiatach-proc_Liczba obwodów', });
+lyr_Voting_wojewodztwa_11.set('fieldAliases', {'fid': 'fid', 'gml_id': 'gml_id', 'JPT_SJR_KO': 'JPT_SJR_KO', 'JPT_POWIER': 'JPT_POWIER', 'JPT_KOD_JE': 'JPT_KOD_JE', 'JPT_NAZWA_': 'JPT_NAZWA_', 'JPT_ORGAN_': 'JPT_ORGAN_', 'JPT_JOR_ID': 'JPT_JOR_ID', 'WERSJA_OD': 'WERSJA_OD', 'WERSJA_DO': 'WERSJA_DO', 'WAZNY_OD': 'WAZNY_OD', 'WAZNY_DO': 'WAZNY_DO', 'JPT_KOD__1': 'JPT_KOD__1', 'JPT_NAZWA1': 'JPT_NAZWA1', 'JPT_ORGAN1': 'JPT_ORGAN1', 'JPT_WAZNA_': 'JPT_WAZNA_', 'ID_BUFORA_': 'ID_BUFORA_', 'ID_BUFORA1': 'ID_BUFORA1', 'ID_TECHNIC': 'ID_TECHNIC', 'IIP_PRZEST': 'IIP_PRZEST', 'IIP_IDENTY': 'IIP_IDENTY', 'IIP_WERSJA': 'IIP_WERSJA', 'JPT_KJ_IIP': 'JPT_KJ_IIP', 'JPT_KJ_I_1': 'JPT_KJ_I_1', 'JPT_KJ_I_2': 'JPT_KJ_I_2', 'JPT_OPIS': 'JPT_OPIS', 'JPT_SPS_KO': 'JPT_SPS_KO', 'ID_BUFOR_1': 'ID_BUFOR_1', 'JPT_ID': 'JPT_ID', 'JPT_POWI_1': 'JPT_POWI_1', 'JPT_KJ_I_3': 'JPT_KJ_I_3', 'JPT_GEOMET': 'JPT_GEOMET', 'JPT_GEOM_1': 'JPT_GEOM_1', 'SHAPE_LENG': 'SHAPE_LENG', 'SHAPE_AREA': 'SHAPE_AREA', 'REGON': 'REGON', 'RODZAJ': 'RODZAJ', 'winner': 'winner', '2024-sejmiki-po-wojewodztwach-proc_Województwo': '2024-sejmiki-po-wojewodztwach-proc_Województwo', '2024-sejmiki-po-wojewodztwach-proc_KO': '2024-sejmiki-po-wojewodztwach-proc_KO', '2024-sejmiki-po-wojewodztwach-proc_Liczba obwodów': '2024-sejmiki-po-wojewodztwach-proc_Liczba obwodów', });
 lyr_Data_agregate_log_gis_13.set('fieldAliases', {'Type': 'Type', 'Project Name': 'Project Name', 'Capacity (MW)': 'Capacity (MW)', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Log scale capacity': 'Log scale capacity', });
-lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15.set('fieldAliases', {'Date Last Researched': 'Date Last Researched', 'Country/Area': 'Country/Area', 'Project Name': 'Project Name', 'Phase Name': 'Phase Name', 'Capacity (MW)': 'Capacity (MW)', 'Installation Type': 'Installation Type', 'Status': 'Status', 'Start year': 'Start year', 'Retired year': 'Retired year', 'Operator': 'Operator', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location accuracy': 'Location accuracy', 'City': 'City', 'Local area (taluk, county)': 'Local area (taluk, county)', 'Major area (prefecture, district)': 'Major area (prefecture, district)', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'GEM location ID': 'GEM location ID', 'GEM phase ID': 'GEM phase ID', 'Other IDs (location)': 'Other IDs (location)', 'Other IDs (unit/phase)': 'Other IDs (unit/phase)', 'Wiki URL': 'Wiki URL', });
-lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16.set('fieldAliases', {'Longitude': 'Longitude', 'Latitude': 'Latitude', 'Date Last Researched': 'Date Last Researched', 'Country/Area': 'Country/Area', 'Project Name': 'Project Name', 'Capacity (MW)': 'Capacity (MW)', 'Capacity Rating': 'Capacity Rating', 'Technology Type': 'Technology Type', 'Status': 'Status', 'Location accuracy': 'Location accuracy', 'City': 'City', 'Local area (taluk, county)': 'Local area (taluk, county)', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'GEM location ID': 'GEM location ID', 'GEM phase ID': 'GEM phase ID', 'Wiki URL': 'Wiki URL', });
-lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17.set('fieldAliases', {'Wiki URL': 'Wiki URL', 'Country/Area': 'Country/Area', 'Plant name': 'Plant name', 'Other Name(s)': 'Other Name(s)', 'Unit name': 'Unit name', 'Fuel': 'Fuel', 'Capacity (MW)': 'Capacity (MW)', 'Status': 'Status', 'Turbine/Engine Technology': 'Turbine/Engine Technology', 'Equipment Manufacturer/Model': 'Equipment Manufacturer/Model', 'CHP': 'CHP', 'Hydrogen capable?': 'Hydrogen capable?', 'CCS attachment?': 'CCS attachment?', 'Conversion/replacement?': 'Conversion/replacement?', 'Conversion from/replacement of (fuel)': 'Conversion from/replacement of (fuel)', 'Conversion from/replacement of (GEM unit ID)': 'Conversion from/replacement of (GEM unit ID)', 'Start year': 'Start year', 'Owner(s)': 'Owner(s)', 'Owner(s) GEM Entity ID': 'Owner(s) GEM Entity ID', 'Parent(s)': 'Parent(s)', 'Parent GEM Entity ID': 'Parent GEM Entity ID', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location accuracy': 'Location accuracy', 'City': 'City', 'Major area (prefecture, district)': 'Major area (prefecture, district)', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'Other IDs (location)': 'Other IDs (location)', 'Other IDs (unit)': 'Other IDs (unit)', 'GEM location ID': 'GEM location ID', 'GEM unit ID': 'GEM unit ID', 'Fuel classification?': 'Fuel classification?', });
-lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_18.set('fieldAliases', {'Date Last Researched': 'Date Last Researched', 'Country/Area': 'Country/Area', 'Project Name': 'Project Name', 'Unit Name': 'Unit Name', 'Capacity (MW)': 'Capacity (MW)', 'Status': 'Status', 'Reactor Type': 'Reactor Type', 'Model': 'Model', 'Start Year': 'Start Year', 'Commercial Operation Date': 'Commercial Operation Date', 'Owner': 'Owner', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location Accuracy': 'Location Accuracy', 'City': 'City', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'GEM location ID': 'GEM location ID', 'GEM unit ID': 'GEM unit ID', 'Wiki URL': 'Wiki URL', });
-lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19.set('fieldAliases', {'Date Last Researched': 'Date Last Researched', 'Country/Area 1': 'Country/Area 1', 'Project Name': 'Project Name', 'Other name(s)': 'Other name(s)', 'Capacity (MW)': 'Capacity (MW)', 'Binational': 'Binational', 'Country/Area 1 Capacity (MW)': 'Country/Area 1 Capacity (MW)', 'Status': 'Status', 'Start Year': 'Start Year', 'Owner': 'Owner', 'Technology Type': 'Technology Type', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location Accuracy': 'Location Accuracy', 'Local Area 1': 'Local Area 1', 'State/Province 1': 'State/Province 1', 'Subregion 1': 'Subregion 1', 'Region 1': 'Region 1', 'GEM location ID': 'GEM location ID', 'GEM unit ID': 'GEM unit ID', 'Wiki URL': 'Wiki URL', });
-lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20.set('fieldAliases', {'GEM unit/phase ID': 'GEM unit/phase ID', 'GEM location ID': 'GEM location ID', 'Country/Area': 'Country/Area', 'Wiki URL': 'Wiki URL', 'Plant name': 'Plant name', 'Unit name': 'Unit name', 'Plant name (other)': 'Plant name (other)', 'Plant name (local)': 'Plant name (local)', 'Owner': 'Owner', 'Owner GEM Entity ID': 'Owner GEM Entity ID', 'Parent': 'Parent', 'Parent GEM Entity ID': 'Parent GEM Entity ID', 'Capacity (MW)': 'Capacity (MW)', 'Status': 'Status', 'Start year': 'Start year', 'Retired year': 'Retired year', 'Planned retirement': 'Planned retirement', 'Coal phaseout year': 'Coal phaseout year', 'Net zero year': 'Net zero year', 'Combustion technology': 'Combustion technology', 'Coal type': 'Coal type', 'Coal source': 'Coal source', 'Conversion to (fuel)': 'Conversion to (fuel)', 'Conversion to (GEM unit ID)': 'Conversion to (GEM unit ID)', 'Alternate Fuel': 'Alternate Fuel', 'Location': 'Location', 'Local area (taluk, county)': 'Local area (taluk, county)', 'Major area (prefecture, district)': 'Major area (prefecture, district)', 'Subnational unit (province, state)': 'Subnational unit (province, state)', 'Subregion': 'Subregion', 'Region': 'Region', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location accuracy': 'Location accuracy', 'Captive': 'Captive', 'Captive industry use': 'Captive industry use', 'CHP': 'CHP', 'Capacity factor': 'Capacity factor', 'Plant age (years)': 'Plant age (years)', 'Heat rate (Btu per kWh)': 'Heat rate (Btu per kWh)', 'Emission factor (kg of CO2 per TJ)': 'Emission factor (kg of CO2 per TJ)', 'Annual CO2 (million tonnes / annum)': 'Annual CO2 (million tonnes / annum)', 'Remaining plant lifetime (years)': 'Remaining plant lifetime (years)', 'Lifetime CO2 (million tonnes)': 'Lifetime CO2 (million tonnes)', });
-lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21.set('fieldAliases', {'GEM Mine ID': 'GEM Mine ID', 'Country / Area': 'Country / Area', 'Mine Name': 'Mine Name', 'Mine Name AKAs': 'Mine Name AKAs', 'Mine Name (Non-ENG)': 'Mine Name (Non-ENG)', 'Owners': 'Owners', 'Parent Company': 'Parent Company', 'Company HQs': 'Company HQs', 'Capacity (Mtpa)': 'Capacity (Mtpa)', 'Production (Mtpa)': 'Production (Mtpa)', 'Year of Production': 'Year of Production', 'Mine Type': 'Mine Type', 'Mining Method': 'Mining Method', 'Mine Size
+lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16.set('fieldAliases', {'Date Last Researched': 'Date Last Researched', 'Country/Area': 'Country/Area', 'Project Name': 'Project Name', 'Phase Name': 'Phase Name', 'Capacity (MW)': 'Capacity (MW)', 'Installation Type': 'Installation Type', 'Status': 'Status', 'Start year': 'Start year', 'Retired year': 'Retired year', 'Operator': 'Operator', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location accuracy': 'Location accuracy', 'City': 'City', 'Local area (taluk, county)': 'Local area (taluk, county)', 'Major area (prefecture, district)': 'Major area (prefecture, district)', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'GEM location ID': 'GEM location ID', 'GEM phase ID': 'GEM phase ID', 'Other IDs (location)': 'Other IDs (location)', 'Other IDs (unit/phase)': 'Other IDs (unit/phase)', 'Wiki URL': 'Wiki URL', });
+lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17.set('fieldAliases', {'Longitude': 'Longitude', 'Latitude': 'Latitude', 'Date Last Researched': 'Date Last Researched', 'Country/Area': 'Country/Area', 'Project Name': 'Project Name', 'Capacity (MW)': 'Capacity (MW)', 'Capacity Rating': 'Capacity Rating', 'Technology Type': 'Technology Type', 'Status': 'Status', 'Location accuracy': 'Location accuracy', 'City': 'City', 'Local area (taluk, county)': 'Local area (taluk, county)', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'GEM location ID': 'GEM location ID', 'GEM phase ID': 'GEM phase ID', 'Wiki URL': 'Wiki URL', });
+lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18.set('fieldAliases', {'Wiki URL': 'Wiki URL', 'Country/Area': 'Country/Area', 'Plant name': 'Plant name', 'Other Name(s)': 'Other Name(s)', 'Unit name': 'Unit name', 'Fuel': 'Fuel', 'Capacity (MW)': 'Capacity (MW)', 'Status': 'Status', 'Turbine/Engine Technology': 'Turbine/Engine Technology', 'Equipment Manufacturer/Model': 'Equipment Manufacturer/Model', 'CHP': 'CHP', 'Hydrogen capable?': 'Hydrogen capable?', 'CCS attachment?': 'CCS attachment?', 'Conversion/replacement?': 'Conversion/replacement?', 'Conversion from/replacement of (fuel)': 'Conversion from/replacement of (fuel)', 'Conversion from/replacement of (GEM unit ID)': 'Conversion from/replacement of (GEM unit ID)', 'Start year': 'Start year', 'Owner(s)': 'Owner(s)', 'Owner(s) GEM Entity ID': 'Owner(s) GEM Entity ID', 'Parent(s)': 'Parent(s)', 'Parent GEM Entity ID': 'Parent GEM Entity ID', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location accuracy': 'Location accuracy', 'City': 'City', 'Major area (prefecture, district)': 'Major area (prefecture, district)', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'Other IDs (location)': 'Other IDs (location)', 'Other IDs (unit)': 'Other IDs (unit)', 'GEM location ID': 'GEM location ID', 'GEM unit ID': 'GEM unit ID', 'Fuel classification?': 'Fuel classification?', });
+lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_19.set('fieldAliases', {'Date Last Researched': 'Date Last Researched', 'Country/Area': 'Country/Area', 'Project Name': 'Project Name', 'Unit Name': 'Unit Name', 'Capacity (MW)': 'Capacity (MW)', 'Status': 'Status', 'Reactor Type': 'Reactor Type', 'Model': 'Model', 'Start Year': 'Start Year', 'Commercial Operation Date': 'Commercial Operation Date', 'Owner': 'Owner', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location Accuracy': 'Location Accuracy', 'City': 'City', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'GEM location ID': 'GEM location ID', 'GEM unit ID': 'GEM unit ID', 'Wiki URL': 'Wiki URL', });
+lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20.set('fieldAliases', {'Date Last Researched': 'Date Last Researched', 'Country/Area 1': 'Country/Area 1', 'Project Name': 'Project Name', 'Other name(s)': 'Other name(s)', 'Capacity (MW)': 'Capacity (MW)', 'Binational': 'Binational', 'Country/Area 1 Capacity (MW)': 'Country/Area 1 Capacity (MW)', 'Status': 'Status', 'Start Year': 'Start Year', 'Owner': 'Owner', 'Technology Type': 'Technology Type', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location Accuracy': 'Location Accuracy', 'Local Area 1': 'Local Area 1', 'State/Province 1': 'State/Province 1', 'Subregion 1': 'Subregion 1', 'Region 1': 'Region 1', 'GEM location ID': 'GEM location ID', 'GEM unit ID': 'GEM unit ID', 'Wiki URL': 'Wiki URL', });
+lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21.set('fieldAliases', {'GEM unit/phase ID': 'GEM unit/phase ID', 'GEM location ID': 'GEM location ID', 'Country/Area': 'Country/Area', 'Wiki URL': 'Wiki URL', 'Plant name': 'Plant name', 'Unit name': 'Unit name', 'Plant name (other)': 'Plant name (other)', 'Plant name (local)': 'Plant name (local)', 'Owner': 'Owner', 'Owner GEM Entity ID': 'Owner GEM Entity ID', 'Parent': 'Parent', 'Parent GEM Entity ID': 'Parent GEM Entity ID', 'Capacity (MW)': 'Capacity (MW)', 'Status': 'Status', 'Start year': 'Start year', 'Retired year': 'Retired year', 'Planned retirement': 'Planned retirement', 'Coal phaseout year': 'Coal phaseout year', 'Net zero year': 'Net zero year', 'Combustion technology': 'Combustion technology', 'Coal type': 'Coal type', 'Coal source': 'Coal source', 'Conversion to (fuel)': 'Conversion to (fuel)', 'Conversion to (GEM unit ID)': 'Conversion to (GEM unit ID)', 'Alternate Fuel': 'Alternate Fuel', 'Location': 'Location', 'Local area (taluk, county)': 'Local area (taluk, county)', 'Major area (prefecture, district)': 'Major area (prefecture, district)', 'Subnational unit (province, state)': 'Subnational unit (province, state)', 'Subregion': 'Subregion', 'Region': 'Region', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location accuracy': 'Location accuracy', 'Captive': 'Captive', 'Captive industry use': 'Captive industry use', 'CHP': 'CHP', 'Capacity factor': 'Capacity factor', 'Plant age (years)': 'Plant age (years)', 'Heat rate (Btu per kWh)': 'Heat rate (Btu per kWh)', 'Emission factor (kg of CO2 per TJ)': 'Emission factor (kg of CO2 per TJ)', 'Annual CO2 (million tonnes / annum)': 'Annual CO2 (million tonnes / annum)', 'Remaining plant lifetime (years)': 'Remaining plant lifetime (years)', 'Lifetime CO2 (million tonnes)': 'Lifetime CO2 (million tonnes)', });
+lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22.set('fieldAliases', {'GEM Mine ID': 'GEM Mine ID', 'Country / Area': 'Country / Area', 'Mine Name': 'Mine Name', 'Mine Name AKAs': 'Mine Name AKAs', 'Mine Name (Non-ENG)': 'Mine Name (Non-ENG)', 'Owners': 'Owners', 'Parent Company': 'Parent Company', 'Company HQs': 'Company HQs', 'Capacity (Mtpa)': 'Capacity (Mtpa)', 'Production (Mtpa)': 'Production (Mtpa)', 'Year of Production': 'Year of Production', 'Mine Type': 'Mine Type', 'Mining Method': 'Mining Method', 'Mine Size
 (Km2)': 'Mine Size
 (Km2)', 'Mine Depth
 (m)': 'Mine Depth
 (m)', 'Depth Accuracy': 'Depth Accuracy', 'Workforce Size': 'Workforce Size', 'Workforce Accuracy': 'Workforce Accuracy', 'Coal Type': 'Coal Type', 'Coal Grade': 'Coal Grade', 'Opening Year': 'Opening Year', 'Closing Year': 'Closing Year', 'Reason for Closure': 'Reason for Closure', 'Mine Site Status': 'Mine Site Status', 'Coalfield': 'Coalfield', 'Location': 'Location', 'Prefecture, District': 'Prefecture, District', 'State, Province': 'State, Province', 'Subregion': 'Subregion', 'Region': 'Region', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location Accuracy': 'Location Accuracy', 'Reported Coal Mine Methane Emissions (thousand tonnes per year)': 'Reported Coal Mine Methane Emissions (thousand tonnes per year)', });
-lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22.set('fieldAliases', {'GEM Mine ID': 'GEM Mine ID', 'Country / Area': 'Country / Area', 'Mine Name': 'Mine Name', 'Mine Name AKAs': 'Mine Name AKAs', 'GEM Wiki Page (ENG)': 'GEM Wiki Page (ENG)', 'Status': 'Status', 'Owners': 'Owners', 'GEM Entity ID': 'GEM Entity ID', 'Owners (Non-ENG)': 'Owners (Non-ENG)', 'Parent Company': 'Parent Company', 'GEM Entity ID_1': 'GEM Entity ID_1', 'Company HQs': 'Company HQs', 'Capacity (Mtpa)': 'Capacity (Mtpa)', 'Production (Mtpa)': 'Production (Mtpa)', 'Year of Production': 'Year of Production', 'Mine Type': 'Mine Type', 'Mining Method': 'Mining Method', 'Mine Size (Km2)': 'Mine Size (Km2)', 'Mine Depth (m)': 'Mine Depth (m)', 'Depth Accuracy': 'Depth Accuracy', 'Workforce Size': 'Workforce Size', 'Workforce Accuracy': 'Workforce Accuracy', 'Coal Type': 'Coal Type', 'Coal Grade': 'Coal Grade', 'Total Reserves (Proven and Probable, Mt)': 'Total Reserves (Proven and Probable, Mt)', 'Year of Total Reserves Recorded': 'Year of Total Reserves Recorded', 'Total Resource (Inferred, Indicated, Measured)': 'Total Resource (Inferred, Indicated, Measured)', 'Reserve to Production Ratio (R/P)': 'Reserve to Production Ratio (R/P)', 'Opening Year': 'Opening Year', 'Closing Year': 'Closing Year', 'Reported Life of Mine': 'Reported Life of Mine', 'Reported Year of Mine Life': 'Reported Year of Mine Life', 'Coalfield': 'Coalfield', 'Location': 'Location', 'State, Province': 'State, Province', 'Subregion': 'Subregion', 'Region': 'Region', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location Accuracy': 'Location Accuracy', 'Reported Coal Mine Methane Emissions (thousand tonnes per year)': 'Reported Coal Mine Methane Emissions (thousand tonnes per year)', 'Year of Reported Coal Mine Methane Emissions': 'Year of Reported Coal Mine Methane Emissions', 'Has associated CMM mitigation data': 'Has associated CMM mitigation data', 'GEM Coal Mine Methane Emissions Estimate (MCM/yr)': 'GEM Coal Mine Methane Emissions Estimate (MCM/yr)', 'GEM Coal Mine Methane Emissions Estimate (M tonnes/yr)': 'GEM Coal Mine Methane Emissions Estimate (M tonnes/yr)', 'Methane Gas Content (m^3/tonne) (Updated)': 'Methane Gas Content (m^3/tonne) (Updated)', 'Methane Emissions Factor (Updated)': 'Methane Emissions Factor (Updated)', 'CMM Emissions (CO2e 20 years)': 'CMM Emissions (CO2e 20 years)', 'CMM Emissions (CO2e 100 years)': 'CMM Emissions (CO2e 100 years)', 'ISO Code': 'ISO Code', });
-lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23.set('fieldAliases', {'GEM Plant ID': 'GEM Plant ID', 'GEM Asset name (English)': 'GEM Asset name (English)', 'Asset name (other language)': 'Asset name (other language)', 'Alternative asset name(s)': 'Alternative asset name(s)', 'SFI ID': 'SFI ID', 'LeadIT Project ID': 'LeadIT Project ID', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Coordinate accuracy': 'Coordinate accuracy', 'GEM wiki page': 'GEM wiki page', 'Municipality': 'Municipality', 'Subnational unit': 'Subnational unit', 'Country/Area': 'Country/Area', 'Cement Capacity (millions metric tonnes per annum)': 'Cement Capacity (millions metric tonnes per annum)', 'Clinker Capacity (millions metric tonnes per annum)': 'Clinker Capacity (millions metric tonnes per annum)', 'Majority Cement Type': 'Majority Cement Type', 'Cement Color': 'Cement Color', 'Operating status': 'Operating status', 'Start date': 'Start date', 'Owner name (English)': 'Owner name (English)', 'Owner name (other language)': 'Owner name (other language)', 'Owner Entity ID': 'Owner Entity ID', 'Parent': 'Parent', 'Parent Entity ID': 'Parent Entity ID', 'Plant type': 'Plant type', 'Production type': 'Production type', 'CCS/CCUS': 'CCS/CCUS', 'Alternative Fuel': 'Alternative Fuel', 'Clay Calcination': 'Clay Calcination', 'field_30': 'field_30', 'field_31': 'field_31', 'field_32': 'field_32', 'field_33': 'field_33', 'field_34': 'field_34', 'field_35': 'field_35', 'field_36': 'field_36', 'field_37': 'field_37', 'field_38': 'field_38', 'field_39': 'field_39', 'field_40': 'field_40', 'field_41': 'field_41', 'field_42': 'field_42', });
-lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24.set('fieldAliases', {'Date last researched': 'Date last researched', 'Country/Area': 'Country/Area', 'Project Name': 'Project Name', 'Unit Name': 'Unit Name', 'Other Name(s)': 'Other Name(s)', 'Capacity (MW)': 'Capacity (MW)', 'Fuel': 'Fuel', 'Status': 'Status', 'Conversion/Replacement?': 'Conversion/Replacement?', 'Unit Conversion Year': 'Unit Conversion Year', 'Start Year': 'Start Year', 'Operator(s)': 'Operator(s)', 'Operator(s) GEM Entity ID': 'Operator(s) GEM Entity ID', 'Owner(s)': 'Owner(s)', 'Owner Name(s) in Local Language / Script': 'Owner Name(s) in Local Language / Script', 'Owner(s) GEM Entity ID': 'Owner(s) GEM Entity ID', 'Parent(s)': 'Parent(s)', 'Parent(s) GEM Entity ID': 'Parent(s) GEM Entity ID', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location Accuracy': 'Location Accuracy', 'City': 'City', 'Major Area (prefecture, district)': 'Major Area (prefecture, district)', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'GEM location ID': 'GEM location ID', 'GEM phase ID': 'GEM phase ID', 'Wiki URL': 'Wiki URL', });
-lyr_Grid_25.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', });
+lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23.set('fieldAliases', {'GEM Mine ID': 'GEM Mine ID', 'Country / Area': 'Country / Area', 'Mine Name': 'Mine Name', 'Mine Name AKAs': 'Mine Name AKAs', 'GEM Wiki Page (ENG)': 'GEM Wiki Page (ENG)', 'Status': 'Status', 'Owners': 'Owners', 'GEM Entity ID': 'GEM Entity ID', 'Owners (Non-ENG)': 'Owners (Non-ENG)', 'Parent Company': 'Parent Company', 'GEM Entity ID_1': 'GEM Entity ID_1', 'Company HQs': 'Company HQs', 'Capacity (Mtpa)': 'Capacity (Mtpa)', 'Production (Mtpa)': 'Production (Mtpa)', 'Year of Production': 'Year of Production', 'Mine Type': 'Mine Type', 'Mining Method': 'Mining Method', 'Mine Size (Km2)': 'Mine Size (Km2)', 'Mine Depth (m)': 'Mine Depth (m)', 'Depth Accuracy': 'Depth Accuracy', 'Workforce Size': 'Workforce Size', 'Workforce Accuracy': 'Workforce Accuracy', 'Coal Type': 'Coal Type', 'Coal Grade': 'Coal Grade', 'Total Reserves (Proven and Probable, Mt)': 'Total Reserves (Proven and Probable, Mt)', 'Year of Total Reserves Recorded': 'Year of Total Reserves Recorded', 'Total Resource (Inferred, Indicated, Measured)': 'Total Resource (Inferred, Indicated, Measured)', 'Reserve to Production Ratio (R/P)': 'Reserve to Production Ratio (R/P)', 'Opening Year': 'Opening Year', 'Closing Year': 'Closing Year', 'Reported Life of Mine': 'Reported Life of Mine', 'Reported Year of Mine Life': 'Reported Year of Mine Life', 'Coalfield': 'Coalfield', 'Location': 'Location', 'State, Province': 'State, Province', 'Subregion': 'Subregion', 'Region': 'Region', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location Accuracy': 'Location Accuracy', 'Reported Coal Mine Methane Emissions (thousand tonnes per year)': 'Reported Coal Mine Methane Emissions (thousand tonnes per year)', 'Year of Reported Coal Mine Methane Emissions': 'Year of Reported Coal Mine Methane Emissions', 'Has associated CMM mitigation data': 'Has associated CMM mitigation data', 'GEM Coal Mine Methane Emissions Estimate (MCM/yr)': 'GEM Coal Mine Methane Emissions Estimate (MCM/yr)', 'GEM Coal Mine Methane Emissions Estimate (M tonnes/yr)': 'GEM Coal Mine Methane Emissions Estimate (M tonnes/yr)', 'Methane Gas Content (m^3/tonne) (Updated)': 'Methane Gas Content (m^3/tonne) (Updated)', 'Methane Emissions Factor (Updated)': 'Methane Emissions Factor (Updated)', 'CMM Emissions (CO2e 20 years)': 'CMM Emissions (CO2e 20 years)', 'CMM Emissions (CO2e 100 years)': 'CMM Emissions (CO2e 100 years)', 'ISO Code': 'ISO Code', });
+lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24.set('fieldAliases', {'GEM Plant ID': 'GEM Plant ID', 'GEM Asset name (English)': 'GEM Asset name (English)', 'Asset name (other language)': 'Asset name (other language)', 'Alternative asset name(s)': 'Alternative asset name(s)', 'SFI ID': 'SFI ID', 'LeadIT Project ID': 'LeadIT Project ID', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Coordinate accuracy': 'Coordinate accuracy', 'GEM wiki page': 'GEM wiki page', 'Municipality': 'Municipality', 'Subnational unit': 'Subnational unit', 'Country/Area': 'Country/Area', 'Cement Capacity (millions metric tonnes per annum)': 'Cement Capacity (millions metric tonnes per annum)', 'Clinker Capacity (millions metric tonnes per annum)': 'Clinker Capacity (millions metric tonnes per annum)', 'Majority Cement Type': 'Majority Cement Type', 'Cement Color': 'Cement Color', 'Operating status': 'Operating status', 'Start date': 'Start date', 'Owner name (English)': 'Owner name (English)', 'Owner name (other language)': 'Owner name (other language)', 'Owner Entity ID': 'Owner Entity ID', 'Parent': 'Parent', 'Parent Entity ID': 'Parent Entity ID', 'Plant type': 'Plant type', 'Production type': 'Production type', 'CCS/CCUS': 'CCS/CCUS', 'Alternative Fuel': 'Alternative Fuel', 'Clay Calcination': 'Clay Calcination', 'field_30': 'field_30', 'field_31': 'field_31', 'field_32': 'field_32', 'field_33': 'field_33', 'field_34': 'field_34', 'field_35': 'field_35', 'field_36': 'field_36', 'field_37': 'field_37', 'field_38': 'field_38', 'field_39': 'field_39', 'field_40': 'field_40', 'field_41': 'field_41', 'field_42': 'field_42', });
+lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25.set('fieldAliases', {'Date last researched': 'Date last researched', 'Country/Area': 'Country/Area', 'Project Name': 'Project Name', 'Unit Name': 'Unit Name', 'Other Name(s)': 'Other Name(s)', 'Capacity (MW)': 'Capacity (MW)', 'Fuel': 'Fuel', 'Status': 'Status', 'Conversion/Replacement?': 'Conversion/Replacement?', 'Unit Conversion Year': 'Unit Conversion Year', 'Start Year': 'Start Year', 'Operator(s)': 'Operator(s)', 'Operator(s) GEM Entity ID': 'Operator(s) GEM Entity ID', 'Owner(s)': 'Owner(s)', 'Owner Name(s) in Local Language / Script': 'Owner Name(s) in Local Language / Script', 'Owner(s) GEM Entity ID': 'Owner(s) GEM Entity ID', 'Parent(s)': 'Parent(s)', 'Parent(s) GEM Entity ID': 'Parent(s) GEM Entity ID', 'Latitude': 'Latitude', 'Longitude': 'Longitude', 'Location Accuracy': 'Location Accuracy', 'City': 'City', 'Major Area (prefecture, district)': 'Major Area (prefecture, district)', 'State/Province': 'State/Province', 'Subregion': 'Subregion', 'Region': 'Region', 'GEM location ID': 'GEM location ID', 'GEM phase ID': 'GEM phase ID', 'Wiki URL': 'Wiki URL', });
+lyr_SilesianVoivodeshipBoundaries_26.set('fieldAliases', {'gml_id': 'gml_id', 'JPT_SJR_KO': 'JPT_SJR_KO', 'JPT_POWIER': 'JPT_POWIER', 'JPT_KOD_JE': 'JPT_KOD_JE', 'JPT_NAZWA_': 'JPT_NAZWA_', 'JPT_ORGAN_': 'JPT_ORGAN_', 'JPT_JOR_ID': 'JPT_JOR_ID', 'WERSJA_OD': 'WERSJA_OD', 'WERSJA_DO': 'WERSJA_DO', 'WAZNY_OD': 'WAZNY_OD', 'WAZNY_DO': 'WAZNY_DO', 'JPT_KOD__1': 'JPT_KOD__1', 'JPT_NAZWA1': 'JPT_NAZWA1', 'JPT_ORGAN1': 'JPT_ORGAN1', 'JPT_WAZNA_': 'JPT_WAZNA_', 'ID_BUFORA_': 'ID_BUFORA_', 'ID_BUFORA1': 'ID_BUFORA1', 'ID_TECHNIC': 'ID_TECHNIC', 'IIP_PRZEST': 'IIP_PRZEST', 'IIP_IDENTY': 'IIP_IDENTY', 'IIP_WERSJA': 'IIP_WERSJA', 'JPT_KJ_IIP': 'JPT_KJ_IIP', 'JPT_KJ_I_1': 'JPT_KJ_I_1', 'JPT_KJ_I_2': 'JPT_KJ_I_2', 'JPT_OPIS': 'JPT_OPIS', 'JPT_SPS_KO': 'JPT_SPS_KO', 'ID_BUFOR_1': 'ID_BUFOR_1', 'JPT_ID': 'JPT_ID', 'JPT_POWI_1': 'JPT_POWI_1', 'JPT_KJ_I_3': 'JPT_KJ_I_3', 'JPT_GEOMET': 'JPT_GEOMET', 'JPT_GEOM_1': 'JPT_GEOM_1', 'SHAPE_LENG': 'SHAPE_LENG', 'SHAPE_AREA': 'SHAPE_AREA', 'REGON': 'REGON', 'RODZAJ': 'RODZAJ', 'winner': 'winner', });
+lyr_Grid_27.set('fieldAliases', {'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', });
 lyr_geoBoundariesSVKADM1_3.set('fieldImages', {'shapeName': 'TextEdit', 'shapeISO': 'TextEdit', 'shapeID': 'TextEdit', 'shapeGroup': 'TextEdit', 'shapeType': 'TextEdit', });
 lyr_geoBoundariesCZEADM1_4.set('fieldImages', {'shapeName': 'TextEdit', 'shapeISO': 'TextEdit', 'shapeID': 'TextEdit', 'shapeGroup': 'TextEdit', 'shapeType': 'TextEdit', });
-lyr_geoBoundariesPOLADM2_5.set('fieldImages', {'shapeName': 'TextEdit', 'shapeISO': 'TextEdit', 'shapeID': 'TextEdit', 'shapeGroup': 'TextEdit', 'shapeType': 'TextEdit', });
+lyr_geoBoundariesPOLADM2_5.set('fieldImages', {'gml_id': 'TextEdit', 'JPT_SJR_KO': 'TextEdit', 'JPT_POWIER': 'TextEdit', 'JPT_KOD_JE': 'TextEdit', 'JPT_NAZWA_': 'TextEdit', 'JPT_ORGAN_': 'TextEdit', 'JPT_JOR_ID': 'TextEdit', 'WERSJA_OD': 'TextEdit', 'WERSJA_DO': 'TextEdit', 'WAZNY_OD': 'TextEdit', 'WAZNY_DO': 'TextEdit', 'JPT_KOD__1': 'TextEdit', 'JPT_NAZWA1': 'TextEdit', 'JPT_ORGAN1': 'TextEdit', 'JPT_WAZNA_': 'TextEdit', 'ID_BUFORA_': 'TextEdit', 'ID_BUFORA1': 'TextEdit', 'ID_TECHNIC': 'TextEdit', 'IIP_PRZEST': 'TextEdit', 'IIP_IDENTY': 'TextEdit', 'IIP_WERSJA': 'TextEdit', 'JPT_KJ_IIP': 'TextEdit', 'JPT_KJ_I_1': 'TextEdit', 'JPT_KJ_I_2': 'TextEdit', 'JPT_OPIS': 'TextEdit', 'JPT_SPS_KO': 'TextEdit', 'ID_BUFOR_1': 'TextEdit', 'JPT_ID': 'TextEdit', 'JPT_POWI_1': 'TextEdit', 'JPT_KJ_I_3': 'TextEdit', 'JPT_GEOMET': 'TextEdit', 'JPT_GEOM_1': 'TextEdit', 'SHAPE_LENG': 'TextEdit', 'SHAPE_AREA': 'TextEdit', 'REGON': 'TextEdit', 'RODZAJ': 'TextEdit', 'winner': 'TextEdit', '2024-sejmiki-po-powiatach-proc_Powiat': 'TextEdit', '2024-sejmiki-po-powiatach-proc_Województwo': 'TextEdit', '2024-sejmiki-po-powiatach-proc_KO': 'TextEdit', '2024-sejmiki-po-powiatach-proc_PiS': 'TextEdit', '2024-sejmiki-po-powiatach-proc_Liczba obwodów': 'TextEdit', });
 lyr_geoBoundariesPOLADM1_6.set('fieldImages', {'shapeName': 'TextEdit', 'shapeISO': 'TextEdit', 'shapeID': 'TextEdit', 'shapeGroup': 'TextEdit', 'shapeType': 'TextEdit', });
 lyr_geoBoundariesSVKADM0_7.set('fieldImages', {'shapeName': 'TextEdit', 'shapeISO': 'TextEdit', 'shapeID': 'TextEdit', 'shapeGroup': 'TextEdit', 'shapeType': 'TextEdit', });
 lyr_geoBoundariesCZEADM0_8.set('fieldImages', {'shapeName': 'TextEdit', 'shapeISO': 'TextEdit', 'shapeID': 'TextEdit', 'shapeGroup': 'TextEdit', 'shapeType': 'TextEdit', });
-lyr_gminy_9.set('fieldImages', {'gml_id': 'TextEdit', 'JPT_SJR_KO': 'TextEdit', 'JPT_POWIER': 'TextEdit', 'JPT_KOD_JE': 'TextEdit', 'JPT_NAZWA_': 'TextEdit', 'JPT_ORGAN_': 'TextEdit', 'JPT_JOR_ID': 'TextEdit', 'WERSJA_OD': 'TextEdit', 'WERSJA_DO': 'TextEdit', 'WAZNY_OD': 'TextEdit', 'WAZNY_DO': 'TextEdit', 'JPT_KOD__1': 'TextEdit', 'JPT_NAZWA1': 'TextEdit', 'JPT_ORGAN1': 'TextEdit', 'JPT_WAZNA_': 'TextEdit', 'ID_BUFORA_': 'TextEdit', 'ID_BUFORA1': 'TextEdit', 'ID_TECHNIC': 'TextEdit', 'IIP_PRZEST': 'TextEdit', 'IIP_IDENTY': 'TextEdit', 'IIP_WERSJA': 'TextEdit', 'JPT_KJ_IIP': 'TextEdit', 'JPT_KJ_I_1': 'TextEdit', 'JPT_KJ_I_2': 'TextEdit', 'JPT_OPIS': 'TextEdit', 'JPT_SPS_KO': 'TextEdit', 'ID_BUFOR_1': 'TextEdit', 'JPT_ID': 'TextEdit', 'JPT_POWI_1': 'TextEdit', 'JPT_KJ_I_3': 'TextEdit', 'JPT_GEOMET': 'TextEdit', 'JPT_GEOM_1': 'TextEdit', 'SHAPE_LENG': 'TextEdit', 'SHAPE_AREA': 'TextEdit', 'REGON': 'TextEdit', 'RODZAJ': 'TextEdit', 'Winner_win': 'TextEdit', '2024-sejmiki-po-gminach-proc_v_Rodzaj jednostki': 'TextEdit', '2024-sejmiki-po-gminach-proc_v_Gmina': 'TextEdit', '2024-sejmiki-po-gminach-proc_v_Powiat': 'TextEdit', '2024-sejmiki-po-gminach-proc_v_Województwo': 'TextEdit', '2024-sejmiki-po-gminach-proc_v_KO': 'TextEdit', '2024-sejmiki-po-gminach-proc_v_PSL': 'TextEdit', '2024-sejmiki-po-gminach-proc_v_PiS': 'TextEdit', '2024-sejmiki-po-gminach-proc_v_Liczba obwodów': 'Range', });
-lyr_powiaty_10.set('fieldImages', {'gml_id': 'TextEdit', 'JPT_SJR_KO': 'TextEdit', 'JPT_POWIER': 'TextEdit', 'JPT_KOD_JE': 'TextEdit', 'JPT_NAZWA_': 'TextEdit', 'JPT_ORGAN_': 'TextEdit', 'JPT_JOR_ID': 'TextEdit', 'WERSJA_OD': 'TextEdit', 'WERSJA_DO': 'TextEdit', 'WAZNY_OD': 'TextEdit', 'WAZNY_DO': 'TextEdit', 'JPT_KOD__1': 'TextEdit', 'JPT_NAZWA1': 'TextEdit', 'JPT_ORGAN1': 'TextEdit', 'JPT_WAZNA_': 'TextEdit', 'ID_BUFORA_': 'TextEdit', 'ID_BUFORA1': 'TextEdit', 'ID_TECHNIC': 'TextEdit', 'IIP_PRZEST': 'TextEdit', 'IIP_IDENTY': 'TextEdit', 'IIP_WERSJA': 'TextEdit', 'JPT_KJ_IIP': 'TextEdit', 'JPT_KJ_I_1': 'TextEdit', 'JPT_KJ_I_2': 'TextEdit', 'JPT_OPIS': 'TextEdit', 'JPT_SPS_KO': 'TextEdit', 'ID_BUFOR_1': 'TextEdit', 'JPT_ID': 'TextEdit', 'JPT_POWI_1': 'TextEdit', 'JPT_KJ_I_3': 'TextEdit', 'JPT_GEOMET': 'TextEdit', 'JPT_GEOM_1': 'TextEdit', 'SHAPE_LENG': 'TextEdit', 'SHAPE_AREA': 'TextEdit', 'REGON': 'TextEdit', 'RODZAJ': 'TextEdit', 'winner': 'TextEdit', '2024-sejmiki-po-powiatach-proc_Powiat': 'TextEdit', '2024-sejmiki-po-powiatach-proc_Województwo': 'TextEdit', '2024-sejmiki-po-powiatach-proc_KO': 'TextEdit', '2024-sejmiki-po-powiatach-proc_PiS': 'TextEdit', '2024-sejmiki-po-powiatach-proc_Liczba obwodów': 'TextEdit', });
-lyr_wojewodztwa_11.set('fieldImages', {'gml_id': 'TextEdit', 'JPT_SJR_KO': 'TextEdit', 'JPT_POWIER': 'TextEdit', 'JPT_KOD_JE': 'TextEdit', 'JPT_NAZWA_': 'TextEdit', 'JPT_ORGAN_': 'TextEdit', 'JPT_JOR_ID': 'TextEdit', 'WERSJA_OD': 'TextEdit', 'WERSJA_DO': 'TextEdit', 'WAZNY_OD': 'TextEdit', 'WAZNY_DO': 'TextEdit', 'JPT_KOD__1': 'TextEdit', 'JPT_NAZWA1': 'TextEdit', 'JPT_ORGAN1': 'TextEdit', 'JPT_WAZNA_': 'TextEdit', 'ID_BUFORA_': 'TextEdit', 'ID_BUFORA1': 'TextEdit', 'ID_TECHNIC': 'TextEdit', 'IIP_PRZEST': 'TextEdit', 'IIP_IDENTY': 'TextEdit', 'IIP_WERSJA': 'TextEdit', 'JPT_KJ_IIP': 'TextEdit', 'JPT_KJ_I_1': 'TextEdit', 'JPT_KJ_I_2': 'TextEdit', 'JPT_OPIS': 'TextEdit', 'JPT_SPS_KO': 'TextEdit', 'ID_BUFOR_1': 'TextEdit', 'JPT_ID': 'TextEdit', 'JPT_POWI_1': 'TextEdit', 'JPT_KJ_I_3': 'TextEdit', 'JPT_GEOMET': 'TextEdit', 'JPT_GEOM_1': 'TextEdit', 'SHAPE_LENG': 'TextEdit', 'SHAPE_AREA': 'TextEdit', 'REGON': 'TextEdit', 'RODZAJ': 'TextEdit', 'winner': 'TextEdit', '2024-sejmiki-po-wojewodztwach-proc_Województwo': 'TextEdit', '2024-sejmiki-po-wojewodztwach-proc_KO': 'TextEdit', '2024-sejmiki-po-wojewodztwach-proc_Liczba obwodów': 'TextEdit', });
+lyr_Voting_gminy_9.set('fieldImages', {'fid': 'TextEdit', 'JPT_SJR_KO': 'TextEdit', 'JPT_POWIER': 'TextEdit', 'JPT_KOD_JE': 'TextEdit', 'JPT_NAZWA_': 'TextEdit', 'JPT_JOR_ID': 'TextEdit', 'WERSJA_OD': 'TextEdit', 'WAZNY_OD': 'TextEdit', 'JPT_ORGAN1': 'TextEdit', 'JPT_WAZNA_': 'TextEdit', 'ID_BUFORA_': 'TextEdit', 'ID_TECHNIC': 'TextEdit', 'IIP_PRZEST': 'TextEdit', 'IIP_IDENTY': 'TextEdit', 'IIP_WERSJA': 'TextEdit', 'JPT_KJ_IIP': 'TextEdit', 'JPT_KJ_I_1': 'TextEdit', 'JPT_SPS_KO': 'TextEdit', 'JPT_ID': 'TextEdit', 'SHAPE_LENG': 'TextEdit', 'SHAPE_AREA': 'TextEdit', 'REGON': 'TextEdit', 'RODZAJ': 'TextEdit', 'Ele_win': 'TextEdit', '2024-sejmiki-po-gminach-proc_Rodzaj jednostki': 'TextEdit', '2024-sejmiki-po-gminach-proc_Gmina': 'TextEdit', '2024-sejmiki-po-gminach-proc_Powiat': 'TextEdit', '2024-sejmiki-po-gminach-proc_Województwo': 'TextEdit', '2024-sejmiki-po-gminach-proc_KO': 'TextEdit', '2024-sejmiki-po-gminach-proc_PSL': 'TextEdit', '2024-sejmiki-po-gminach-proc_PiS': 'TextEdit', '2024-sejmiki-po-gminach-proc_Liczba obwodów': 'Range', });
+lyr_Voting_powiaty_10.set('fieldImages', {'fid': 'TextEdit', 'JPT_SJR_KO': 'TextEdit', 'JPT_POWIER': 'TextEdit', 'JPT_KOD_JE': 'TextEdit', 'JPT_NAZWA_': 'TextEdit', 'JPT_JOR_ID': 'TextEdit', 'WERSJA_OD': 'TextEdit', 'WAZNY_OD': 'TextEdit', 'JPT_ORGAN1': 'TextEdit', 'JPT_WAZNA_': 'TextEdit', 'ID_BUFORA_': 'TextEdit', 'ID_BUFORA1': 'TextEdit', 'ID_TECHNIC': 'TextEdit', 'IIP_PRZEST': 'TextEdit', 'IIP_IDENTY': 'TextEdit', 'IIP_WERSJA': 'TextEdit', 'JPT_KJ_IIP': 'TextEdit', 'JPT_KJ_I_1': 'TextEdit', 'JPT_SPS_KO': 'TextEdit', 'JPT_ID': 'TextEdit', 'SHAPE_LENG': 'TextEdit', 'SHAPE_AREA': 'TextEdit', 'REGON': 'TextEdit', 'RODZAJ': 'TextEdit', 'winner': 'TextEdit', '2024-sejmiki-po-powiatach-proc_Powiat': 'TextEdit', '2024-sejmiki-po-powiatach-proc_Województwo': 'TextEdit', '2024-sejmiki-po-powiatach-proc_KO': 'TextEdit', '2024-sejmiki-po-powiatach-proc_PiS': 'TextEdit', '2024-sejmiki-po-powiatach-proc_Liczba obwodów': 'TextEdit', });
+lyr_Voting_wojewodztwa_11.set('fieldImages', {'fid': 'TextEdit', 'gml_id': 'TextEdit', 'JPT_SJR_KO': 'TextEdit', 'JPT_POWIER': 'TextEdit', 'JPT_KOD_JE': 'TextEdit', 'JPT_NAZWA_': 'TextEdit', 'JPT_ORGAN_': 'TextEdit', 'JPT_JOR_ID': 'TextEdit', 'WERSJA_OD': 'TextEdit', 'WERSJA_DO': 'TextEdit', 'WAZNY_OD': 'TextEdit', 'WAZNY_DO': 'TextEdit', 'JPT_KOD__1': 'TextEdit', 'JPT_NAZWA1': 'TextEdit', 'JPT_ORGAN1': 'TextEdit', 'JPT_WAZNA_': 'TextEdit', 'ID_BUFORA_': 'TextEdit', 'ID_BUFORA1': 'TextEdit', 'ID_TECHNIC': 'TextEdit', 'IIP_PRZEST': 'TextEdit', 'IIP_IDENTY': 'TextEdit', 'IIP_WERSJA': 'TextEdit', 'JPT_KJ_IIP': 'TextEdit', 'JPT_KJ_I_1': 'TextEdit', 'JPT_KJ_I_2': 'TextEdit', 'JPT_OPIS': 'TextEdit', 'JPT_SPS_KO': 'TextEdit', 'ID_BUFOR_1': 'TextEdit', 'JPT_ID': 'TextEdit', 'JPT_POWI_1': 'TextEdit', 'JPT_KJ_I_3': 'TextEdit', 'JPT_GEOMET': 'TextEdit', 'JPT_GEOM_1': 'TextEdit', 'SHAPE_LENG': 'TextEdit', 'SHAPE_AREA': 'TextEdit', 'REGON': 'TextEdit', 'RODZAJ': 'TextEdit', 'winner': 'TextEdit', '2024-sejmiki-po-wojewodztwach-proc_Województwo': 'TextEdit', '2024-sejmiki-po-wojewodztwach-proc_KO': 'TextEdit', '2024-sejmiki-po-wojewodztwach-proc_Liczba obwodów': 'TextEdit', });
 lyr_Data_agregate_log_gis_13.set('fieldImages', {'Type': 'TextEdit', 'Project Name': 'TextEdit', 'Capacity (MW)': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Log scale capacity': 'TextEdit', });
-lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15.set('fieldImages', {'Date Last Researched': 'DateTime', 'Country/Area': 'TextEdit', 'Project Name': 'TextEdit', 'Phase Name': 'Range', 'Capacity (MW)': 'Range', 'Installation Type': 'TextEdit', 'Status': 'TextEdit', 'Start year': 'Range', 'Retired year': 'TextEdit', 'Operator': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location accuracy': 'TextEdit', 'City': 'TextEdit', 'Local area (taluk, county)': 'TextEdit', 'Major area (prefecture, district)': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM phase ID': 'TextEdit', 'Other IDs (location)': 'TextEdit', 'Other IDs (unit/phase)': 'TextEdit', 'Wiki URL': 'TextEdit', });
-lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16.set('fieldImages', {'Longitude': 'TextEdit', 'Latitude': 'TextEdit', 'Date Last Researched': 'DateTime', 'Country/Area': 'TextEdit', 'Project Name': 'TextEdit', 'Capacity (MW)': 'TextEdit', 'Capacity Rating': 'TextEdit', 'Technology Type': 'TextEdit', 'Status': 'TextEdit', 'Location accuracy': 'TextEdit', 'City': 'TextEdit', 'Local area (taluk, county)': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM phase ID': 'TextEdit', 'Wiki URL': 'TextEdit', });
-lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17.set('fieldImages', {'Wiki URL': 'TextEdit', 'Country/Area': 'TextEdit', 'Plant name': 'TextEdit', 'Other Name(s)': 'TextEdit', 'Unit name': 'TextEdit', 'Fuel': 'TextEdit', 'Capacity (MW)': 'Range', 'Status': 'TextEdit', 'Turbine/Engine Technology': 'TextEdit', 'Equipment Manufacturer/Model': 'TextEdit', 'CHP': 'CheckBox', 'Hydrogen capable?': 'TextEdit', 'CCS attachment?': 'TextEdit', 'Conversion/replacement?': 'TextEdit', 'Conversion from/replacement of (fuel)': 'TextEdit', 'Conversion from/replacement of (GEM unit ID)': 'TextEdit', 'Start year': 'TextEdit', 'Owner(s)': 'TextEdit', 'Owner(s) GEM Entity ID': 'TextEdit', 'Parent(s)': 'TextEdit', 'Parent GEM Entity ID': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location accuracy': 'TextEdit', 'City': 'TextEdit', 'Major area (prefecture, district)': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'Other IDs (location)': 'TextEdit', 'Other IDs (unit)': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM unit ID': 'TextEdit', 'Fuel classification?': 'TextEdit', });
-lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_18.set('fieldImages', {'Date Last Researched': 'DateTime', 'Country/Area': 'TextEdit', 'Project Name': 'TextEdit', 'Unit Name': 'Range', 'Capacity (MW)': 'Range', 'Status': 'TextEdit', 'Reactor Type': 'TextEdit', 'Model': 'TextEdit', 'Start Year': 'Range', 'Commercial Operation Date': 'Range', 'Owner': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location Accuracy': 'TextEdit', 'City': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM unit ID': 'TextEdit', 'Wiki URL': 'TextEdit', });
-lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19.set('fieldImages', {'Date Last Researched': 'Range', 'Country/Area 1': 'TextEdit', 'Project Name': 'TextEdit', 'Other name(s)': 'TextEdit', 'Capacity (MW)': 'Range', 'Binational': 'CheckBox', 'Country/Area 1 Capacity (MW)': 'Range', 'Status': 'TextEdit', 'Start Year': 'Range', 'Owner': 'TextEdit', 'Technology Type': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location Accuracy': 'TextEdit', 'Local Area 1': 'TextEdit', 'State/Province 1': 'TextEdit', 'Subregion 1': 'TextEdit', 'Region 1': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM unit ID': 'TextEdit', 'Wiki URL': 'TextEdit', });
-lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20.set('fieldImages', {'GEM unit/phase ID': 'TextEdit', 'GEM location ID': 'TextEdit', 'Country/Area': 'TextEdit', 'Wiki URL': 'TextEdit', 'Plant name': 'TextEdit', 'Unit name': 'TextEdit', 'Plant name (other)': 'TextEdit', 'Plant name (local)': 'TextEdit', 'Owner': 'TextEdit', 'Owner GEM Entity ID': 'TextEdit', 'Parent': 'TextEdit', 'Parent GEM Entity ID': 'TextEdit', 'Capacity (MW)': 'TextEdit', 'Status': 'TextEdit', 'Start year': 'Range', 'Retired year': 'Range', 'Planned retirement': 'Range', 'Coal phaseout year': 'Range', 'Net zero year': 'Range', 'Combustion technology': 'TextEdit', 'Coal type': 'TextEdit', 'Coal source': 'TextEdit', 'Conversion to (fuel)': 'TextEdit', 'Conversion to (GEM unit ID)': 'TextEdit', 'Alternate Fuel': 'TextEdit', 'Location': 'TextEdit', 'Local area (taluk, county)': 'TextEdit', 'Major area (prefecture, district)': 'TextEdit', 'Subnational unit (province, state)': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location accuracy': 'TextEdit', 'Captive': 'TextEdit', 'Captive industry use': 'TextEdit', 'CHP': 'CheckBox', 'Capacity factor': 'TextEdit', 'Plant age (years)': 'Range', 'Heat rate (Btu per kWh)': 'TextEdit', 'Emission factor (kg of CO2 per TJ)': 'Range', 'Annual CO2 (million tonnes / annum)': 'TextEdit', 'Remaining plant lifetime (years)': 'Range', 'Lifetime CO2 (million tonnes)': 'TextEdit', });
-lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21.set('fieldImages', {'GEM Mine ID': 'TextEdit', 'Country / Area': 'TextEdit', 'Mine Name': 'TextEdit', 'Mine Name AKAs': 'TextEdit', 'Mine Name (Non-ENG)': 'TextEdit', 'Owners': 'TextEdit', 'Parent Company': 'TextEdit', 'Company HQs': 'TextEdit', 'Capacity (Mtpa)': 'TextEdit', 'Production (Mtpa)': 'TextEdit', 'Year of Production': 'Range', 'Mine Type': 'TextEdit', 'Mining Method': 'TextEdit', 'Mine Size
+lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16.set('fieldImages', {'Date Last Researched': 'DateTime', 'Country/Area': 'TextEdit', 'Project Name': 'TextEdit', 'Phase Name': 'Range', 'Capacity (MW)': 'Range', 'Installation Type': 'TextEdit', 'Status': 'TextEdit', 'Start year': 'Range', 'Retired year': 'TextEdit', 'Operator': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location accuracy': 'TextEdit', 'City': 'TextEdit', 'Local area (taluk, county)': 'TextEdit', 'Major area (prefecture, district)': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM phase ID': 'TextEdit', 'Other IDs (location)': 'TextEdit', 'Other IDs (unit/phase)': 'TextEdit', 'Wiki URL': 'TextEdit', });
+lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17.set('fieldImages', {'Longitude': 'TextEdit', 'Latitude': 'TextEdit', 'Date Last Researched': 'DateTime', 'Country/Area': 'TextEdit', 'Project Name': 'TextEdit', 'Capacity (MW)': 'TextEdit', 'Capacity Rating': 'TextEdit', 'Technology Type': 'TextEdit', 'Status': 'TextEdit', 'Location accuracy': 'TextEdit', 'City': 'TextEdit', 'Local area (taluk, county)': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM phase ID': 'TextEdit', 'Wiki URL': 'TextEdit', });
+lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18.set('fieldImages', {'Wiki URL': 'TextEdit', 'Country/Area': 'TextEdit', 'Plant name': 'TextEdit', 'Other Name(s)': 'TextEdit', 'Unit name': 'TextEdit', 'Fuel': 'TextEdit', 'Capacity (MW)': 'Range', 'Status': 'TextEdit', 'Turbine/Engine Technology': 'TextEdit', 'Equipment Manufacturer/Model': 'TextEdit', 'CHP': 'CheckBox', 'Hydrogen capable?': 'TextEdit', 'CCS attachment?': 'TextEdit', 'Conversion/replacement?': 'TextEdit', 'Conversion from/replacement of (fuel)': 'TextEdit', 'Conversion from/replacement of (GEM unit ID)': 'TextEdit', 'Start year': 'TextEdit', 'Owner(s)': 'TextEdit', 'Owner(s) GEM Entity ID': 'TextEdit', 'Parent(s)': 'TextEdit', 'Parent GEM Entity ID': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location accuracy': 'TextEdit', 'City': 'TextEdit', 'Major area (prefecture, district)': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'Other IDs (location)': 'TextEdit', 'Other IDs (unit)': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM unit ID': 'TextEdit', 'Fuel classification?': 'TextEdit', });
+lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_19.set('fieldImages', {'Date Last Researched': 'DateTime', 'Country/Area': 'TextEdit', 'Project Name': 'TextEdit', 'Unit Name': 'Range', 'Capacity (MW)': 'Range', 'Status': 'TextEdit', 'Reactor Type': 'TextEdit', 'Model': 'TextEdit', 'Start Year': 'Range', 'Commercial Operation Date': 'Range', 'Owner': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location Accuracy': 'TextEdit', 'City': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM unit ID': 'TextEdit', 'Wiki URL': 'TextEdit', });
+lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20.set('fieldImages', {'Date Last Researched': 'Range', 'Country/Area 1': 'TextEdit', 'Project Name': 'TextEdit', 'Other name(s)': 'TextEdit', 'Capacity (MW)': 'Range', 'Binational': 'CheckBox', 'Country/Area 1 Capacity (MW)': 'Range', 'Status': 'TextEdit', 'Start Year': 'Range', 'Owner': 'TextEdit', 'Technology Type': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location Accuracy': 'TextEdit', 'Local Area 1': 'TextEdit', 'State/Province 1': 'TextEdit', 'Subregion 1': 'TextEdit', 'Region 1': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM unit ID': 'TextEdit', 'Wiki URL': 'TextEdit', });
+lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21.set('fieldImages', {'GEM unit/phase ID': 'TextEdit', 'GEM location ID': 'TextEdit', 'Country/Area': 'TextEdit', 'Wiki URL': 'TextEdit', 'Plant name': 'TextEdit', 'Unit name': 'TextEdit', 'Plant name (other)': 'TextEdit', 'Plant name (local)': 'TextEdit', 'Owner': 'TextEdit', 'Owner GEM Entity ID': 'TextEdit', 'Parent': 'TextEdit', 'Parent GEM Entity ID': 'TextEdit', 'Capacity (MW)': 'TextEdit', 'Status': 'TextEdit', 'Start year': 'Range', 'Retired year': 'Range', 'Planned retirement': 'Range', 'Coal phaseout year': 'Range', 'Net zero year': 'Range', 'Combustion technology': 'TextEdit', 'Coal type': 'TextEdit', 'Coal source': 'TextEdit', 'Conversion to (fuel)': 'TextEdit', 'Conversion to (GEM unit ID)': 'TextEdit', 'Alternate Fuel': 'TextEdit', 'Location': 'TextEdit', 'Local area (taluk, county)': 'TextEdit', 'Major area (prefecture, district)': 'TextEdit', 'Subnational unit (province, state)': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location accuracy': 'TextEdit', 'Captive': 'TextEdit', 'Captive industry use': 'TextEdit', 'CHP': 'CheckBox', 'Capacity factor': 'TextEdit', 'Plant age (years)': 'Range', 'Heat rate (Btu per kWh)': 'TextEdit', 'Emission factor (kg of CO2 per TJ)': 'Range', 'Annual CO2 (million tonnes / annum)': 'TextEdit', 'Remaining plant lifetime (years)': 'Range', 'Lifetime CO2 (million tonnes)': 'TextEdit', });
+lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22.set('fieldImages', {'GEM Mine ID': 'TextEdit', 'Country / Area': 'TextEdit', 'Mine Name': 'TextEdit', 'Mine Name AKAs': 'TextEdit', 'Mine Name (Non-ENG)': 'TextEdit', 'Owners': 'TextEdit', 'Parent Company': 'TextEdit', 'Company HQs': 'TextEdit', 'Capacity (Mtpa)': 'TextEdit', 'Production (Mtpa)': 'TextEdit', 'Year of Production': 'Range', 'Mine Type': 'TextEdit', 'Mining Method': 'TextEdit', 'Mine Size
 (Km2)': 'TextEdit', 'Mine Depth
 (m)': 'Range', 'Depth Accuracy': 'TextEdit', 'Workforce Size': 'Range', 'Workforce Accuracy': 'TextEdit', 'Coal Type': 'TextEdit', 'Coal Grade': 'TextEdit', 'Opening Year': 'Range', 'Closing Year': 'Range', 'Reason for Closure': 'TextEdit', 'Mine Site Status': 'TextEdit', 'Coalfield': 'TextEdit', 'Location': 'TextEdit', 'Prefecture, District': 'TextEdit', 'State, Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location Accuracy': 'TextEdit', 'Reported Coal Mine Methane Emissions (thousand tonnes per year)': 'TextEdit', });
-lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22.set('fieldImages', {'GEM Mine ID': 'TextEdit', 'Country / Area': 'TextEdit', 'Mine Name': 'TextEdit', 'Mine Name AKAs': 'TextEdit', 'GEM Wiki Page (ENG)': 'TextEdit', 'Status': 'TextEdit', 'Owners': 'TextEdit', 'GEM Entity ID': 'TextEdit', 'Owners (Non-ENG)': 'TextEdit', 'Parent Company': 'TextEdit', 'GEM Entity ID_1': 'TextEdit', 'Company HQs': 'TextEdit', 'Capacity (Mtpa)': 'TextEdit', 'Production (Mtpa)': 'TextEdit', 'Year of Production': 'Range', 'Mine Type': 'TextEdit', 'Mining Method': 'TextEdit', 'Mine Size (Km2)': 'TextEdit', 'Mine Depth (m)': 'Range', 'Depth Accuracy': 'TextEdit', 'Workforce Size': 'Range', 'Workforce Accuracy': 'TextEdit', 'Coal Type': 'TextEdit', 'Coal Grade': 'TextEdit', 'Total Reserves (Proven and Probable, Mt)': 'TextEdit', 'Year of Total Reserves Recorded': 'Range', 'Total Resource (Inferred, Indicated, Measured)': 'TextEdit', 'Reserve to Production Ratio (R/P)': 'Range', 'Opening Year': 'Range', 'Closing Year': 'Range', 'Reported Life of Mine': 'TextEdit', 'Reported Year of Mine Life': 'TextEdit', 'Coalfield': 'TextEdit', 'Location': 'TextEdit', 'State, Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location Accuracy': 'TextEdit', 'Reported Coal Mine Methane Emissions (thousand tonnes per year)': 'TextEdit', 'Year of Reported Coal Mine Methane Emissions': 'Range', 'Has associated CMM mitigation data': 'CheckBox', 'GEM Coal Mine Methane Emissions Estimate (MCM/yr)': 'TextEdit', 'GEM Coal Mine Methane Emissions Estimate (M tonnes/yr)': 'TextEdit', 'Methane Gas Content (m^3/tonne) (Updated)': 'TextEdit', 'Methane Emissions Factor (Updated)': 'TextEdit', 'CMM Emissions (CO2e 20 years)': 'TextEdit', 'CMM Emissions (CO2e 100 years)': 'TextEdit', 'ISO Code': 'Range', });
-lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23.set('fieldImages', {'GEM Plant ID': 'TextEdit', 'GEM Asset name (English)': 'TextEdit', 'Asset name (other language)': 'TextEdit', 'Alternative asset name(s)': 'TextEdit', 'SFI ID': 'TextEdit', 'LeadIT Project ID': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Coordinate accuracy': 'TextEdit', 'GEM wiki page': 'TextEdit', 'Municipality': 'TextEdit', 'Subnational unit': 'TextEdit', 'Country/Area': 'TextEdit', 'Cement Capacity (millions metric tonnes per annum)': 'TextEdit', 'Clinker Capacity (millions metric tonnes per annum)': 'TextEdit', 'Majority Cement Type': 'TextEdit', 'Cement Color': 'TextEdit', 'Operating status': 'TextEdit', 'Start date': 'Range', 'Owner name (English)': 'TextEdit', 'Owner name (other language)': 'TextEdit', 'Owner Entity ID': 'TextEdit', 'Parent': 'TextEdit', 'Parent Entity ID': 'TextEdit', 'Plant type': 'TextEdit', 'Production type': 'TextEdit', 'CCS/CCUS': 'TextEdit', 'Alternative Fuel': 'TextEdit', 'Clay Calcination': 'TextEdit', 'field_30': 'TextEdit', 'field_31': 'TextEdit', 'field_32': 'TextEdit', 'field_33': 'TextEdit', 'field_34': 'TextEdit', 'field_35': 'TextEdit', 'field_36': 'TextEdit', 'field_37': 'TextEdit', 'field_38': 'TextEdit', 'field_39': 'TextEdit', 'field_40': 'TextEdit', 'field_41': 'TextEdit', 'field_42': 'TextEdit', });
-lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24.set('fieldImages', {'Date last researched': 'Range', 'Country/Area': 'TextEdit', 'Project Name': 'TextEdit', 'Unit Name': 'TextEdit', 'Other Name(s)': 'TextEdit', 'Capacity (MW)': 'TextEdit', 'Fuel': 'TextEdit', 'Status': 'TextEdit', 'Conversion/Replacement?': 'TextEdit', 'Unit Conversion Year': 'Range', 'Start Year': 'Range', 'Operator(s)': 'TextEdit', 'Operator(s) GEM Entity ID': 'TextEdit', 'Owner(s)': 'TextEdit', 'Owner Name(s) in Local Language / Script': 'TextEdit', 'Owner(s) GEM Entity ID': 'TextEdit', 'Parent(s)': 'TextEdit', 'Parent(s) GEM Entity ID': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location Accuracy': 'TextEdit', 'City': 'TextEdit', 'Major Area (prefecture, district)': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM phase ID': 'TextEdit', 'Wiki URL': 'TextEdit', });
-lyr_Grid_25.set('fieldImages', {'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', });
+lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23.set('fieldImages', {'GEM Mine ID': 'TextEdit', 'Country / Area': 'TextEdit', 'Mine Name': 'TextEdit', 'Mine Name AKAs': 'TextEdit', 'GEM Wiki Page (ENG)': 'TextEdit', 'Status': 'TextEdit', 'Owners': 'TextEdit', 'GEM Entity ID': 'TextEdit', 'Owners (Non-ENG)': 'TextEdit', 'Parent Company': 'TextEdit', 'GEM Entity ID_1': 'TextEdit', 'Company HQs': 'TextEdit', 'Capacity (Mtpa)': 'TextEdit', 'Production (Mtpa)': 'TextEdit', 'Year of Production': 'Range', 'Mine Type': 'TextEdit', 'Mining Method': 'TextEdit', 'Mine Size (Km2)': 'TextEdit', 'Mine Depth (m)': 'Range', 'Depth Accuracy': 'TextEdit', 'Workforce Size': 'Range', 'Workforce Accuracy': 'TextEdit', 'Coal Type': 'TextEdit', 'Coal Grade': 'TextEdit', 'Total Reserves (Proven and Probable, Mt)': 'TextEdit', 'Year of Total Reserves Recorded': 'Range', 'Total Resource (Inferred, Indicated, Measured)': 'TextEdit', 'Reserve to Production Ratio (R/P)': 'Range', 'Opening Year': 'Range', 'Closing Year': 'Range', 'Reported Life of Mine': 'TextEdit', 'Reported Year of Mine Life': 'TextEdit', 'Coalfield': 'TextEdit', 'Location': 'TextEdit', 'State, Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location Accuracy': 'TextEdit', 'Reported Coal Mine Methane Emissions (thousand tonnes per year)': 'TextEdit', 'Year of Reported Coal Mine Methane Emissions': 'Range', 'Has associated CMM mitigation data': 'CheckBox', 'GEM Coal Mine Methane Emissions Estimate (MCM/yr)': 'TextEdit', 'GEM Coal Mine Methane Emissions Estimate (M tonnes/yr)': 'TextEdit', 'Methane Gas Content (m^3/tonne) (Updated)': 'TextEdit', 'Methane Emissions Factor (Updated)': 'TextEdit', 'CMM Emissions (CO2e 20 years)': 'TextEdit', 'CMM Emissions (CO2e 100 years)': 'TextEdit', 'ISO Code': 'Range', });
+lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24.set('fieldImages', {'GEM Plant ID': 'TextEdit', 'GEM Asset name (English)': 'TextEdit', 'Asset name (other language)': 'TextEdit', 'Alternative asset name(s)': 'TextEdit', 'SFI ID': 'TextEdit', 'LeadIT Project ID': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Coordinate accuracy': 'TextEdit', 'GEM wiki page': 'TextEdit', 'Municipality': 'TextEdit', 'Subnational unit': 'TextEdit', 'Country/Area': 'TextEdit', 'Cement Capacity (millions metric tonnes per annum)': 'TextEdit', 'Clinker Capacity (millions metric tonnes per annum)': 'TextEdit', 'Majority Cement Type': 'TextEdit', 'Cement Color': 'TextEdit', 'Operating status': 'TextEdit', 'Start date': 'Range', 'Owner name (English)': 'TextEdit', 'Owner name (other language)': 'TextEdit', 'Owner Entity ID': 'TextEdit', 'Parent': 'TextEdit', 'Parent Entity ID': 'TextEdit', 'Plant type': 'TextEdit', 'Production type': 'TextEdit', 'CCS/CCUS': 'TextEdit', 'Alternative Fuel': 'TextEdit', 'Clay Calcination': 'TextEdit', 'field_30': 'TextEdit', 'field_31': 'TextEdit', 'field_32': 'TextEdit', 'field_33': 'TextEdit', 'field_34': 'TextEdit', 'field_35': 'TextEdit', 'field_36': 'TextEdit', 'field_37': 'TextEdit', 'field_38': 'TextEdit', 'field_39': 'TextEdit', 'field_40': 'TextEdit', 'field_41': 'TextEdit', 'field_42': 'TextEdit', });
+lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25.set('fieldImages', {'Date last researched': 'Range', 'Country/Area': 'TextEdit', 'Project Name': 'TextEdit', 'Unit Name': 'TextEdit', 'Other Name(s)': 'TextEdit', 'Capacity (MW)': 'TextEdit', 'Fuel': 'TextEdit', 'Status': 'TextEdit', 'Conversion/Replacement?': 'TextEdit', 'Unit Conversion Year': 'Range', 'Start Year': 'Range', 'Operator(s)': 'TextEdit', 'Operator(s) GEM Entity ID': 'TextEdit', 'Owner(s)': 'TextEdit', 'Owner Name(s) in Local Language / Script': 'TextEdit', 'Owner(s) GEM Entity ID': 'TextEdit', 'Parent(s)': 'TextEdit', 'Parent(s) GEM Entity ID': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', 'Location Accuracy': 'TextEdit', 'City': 'TextEdit', 'Major Area (prefecture, district)': 'TextEdit', 'State/Province': 'TextEdit', 'Subregion': 'TextEdit', 'Region': 'TextEdit', 'GEM location ID': 'TextEdit', 'GEM phase ID': 'TextEdit', 'Wiki URL': 'TextEdit', });
+lyr_SilesianVoivodeshipBoundaries_26.set('fieldImages', {'gml_id': 'TextEdit', 'JPT_SJR_KO': 'TextEdit', 'JPT_POWIER': 'TextEdit', 'JPT_KOD_JE': 'TextEdit', 'JPT_NAZWA_': 'TextEdit', 'JPT_ORGAN_': 'TextEdit', 'JPT_JOR_ID': 'TextEdit', 'WERSJA_OD': 'TextEdit', 'WERSJA_DO': 'TextEdit', 'WAZNY_OD': 'TextEdit', 'WAZNY_DO': 'TextEdit', 'JPT_KOD__1': 'TextEdit', 'JPT_NAZWA1': 'TextEdit', 'JPT_ORGAN1': 'TextEdit', 'JPT_WAZNA_': 'TextEdit', 'ID_BUFORA_': 'TextEdit', 'ID_BUFORA1': 'TextEdit', 'ID_TECHNIC': 'TextEdit', 'IIP_PRZEST': 'TextEdit', 'IIP_IDENTY': 'TextEdit', 'IIP_WERSJA': 'TextEdit', 'JPT_KJ_IIP': 'TextEdit', 'JPT_KJ_I_1': 'TextEdit', 'JPT_KJ_I_2': 'TextEdit', 'JPT_OPIS': 'TextEdit', 'JPT_SPS_KO': 'TextEdit', 'ID_BUFOR_1': 'TextEdit', 'JPT_ID': 'TextEdit', 'JPT_POWI_1': 'TextEdit', 'JPT_KJ_I_3': 'TextEdit', 'JPT_GEOMET': 'TextEdit', 'JPT_GEOM_1': 'TextEdit', 'SHAPE_LENG': 'TextEdit', 'SHAPE_AREA': 'TextEdit', 'REGON': 'TextEdit', 'RODZAJ': 'TextEdit', 'winner': '', });
+lyr_Grid_27.set('fieldImages', {'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', });
 lyr_geoBoundariesSVKADM1_3.set('fieldLabels', {'shapeName': 'no label', 'shapeISO': 'no label', 'shapeID': 'no label', 'shapeGroup': 'no label', 'shapeType': 'no label', });
 lyr_geoBoundariesCZEADM1_4.set('fieldLabels', {'shapeName': 'no label', 'shapeISO': 'no label', 'shapeID': 'no label', 'shapeGroup': 'no label', 'shapeType': 'no label', });
-lyr_geoBoundariesPOLADM2_5.set('fieldLabels', {'shapeName': 'no label', 'shapeISO': 'no label', 'shapeID': 'no label', 'shapeGroup': 'no label', 'shapeType': 'no label', });
+lyr_geoBoundariesPOLADM2_5.set('fieldLabels', {'gml_id': 'no label', 'JPT_SJR_KO': 'no label', 'JPT_POWIER': 'no label', 'JPT_KOD_JE': 'no label', 'JPT_NAZWA_': 'no label', 'JPT_ORGAN_': 'no label', 'JPT_JOR_ID': 'no label', 'WERSJA_OD': 'no label', 'WERSJA_DO': 'no label', 'WAZNY_OD': 'no label', 'WAZNY_DO': 'no label', 'JPT_KOD__1': 'no label', 'JPT_NAZWA1': 'no label', 'JPT_ORGAN1': 'no label', 'JPT_WAZNA_': 'no label', 'ID_BUFORA_': 'no label', 'ID_BUFORA1': 'no label', 'ID_TECHNIC': 'no label', 'IIP_PRZEST': 'no label', 'IIP_IDENTY': 'no label', 'IIP_WERSJA': 'no label', 'JPT_KJ_IIP': 'no label', 'JPT_KJ_I_1': 'no label', 'JPT_KJ_I_2': 'no label', 'JPT_OPIS': 'no label', 'JPT_SPS_KO': 'no label', 'ID_BUFOR_1': 'no label', 'JPT_ID': 'no label', 'JPT_POWI_1': 'no label', 'JPT_KJ_I_3': 'no label', 'JPT_GEOMET': 'no label', 'JPT_GEOM_1': 'no label', 'SHAPE_LENG': 'no label', 'SHAPE_AREA': 'no label', 'REGON': 'no label', 'RODZAJ': 'no label', 'winner': 'no label', '2024-sejmiki-po-powiatach-proc_Powiat': 'no label', '2024-sejmiki-po-powiatach-proc_Województwo': 'no label', '2024-sejmiki-po-powiatach-proc_KO': 'no label', '2024-sejmiki-po-powiatach-proc_PiS': 'no label', '2024-sejmiki-po-powiatach-proc_Liczba obwodów': 'no label', });
 lyr_geoBoundariesPOLADM1_6.set('fieldLabels', {'shapeName': 'no label', 'shapeISO': 'no label', 'shapeID': 'no label', 'shapeGroup': 'no label', 'shapeType': 'no label', });
 lyr_geoBoundariesSVKADM0_7.set('fieldLabels', {'shapeName': 'no label', 'shapeISO': 'no label', 'shapeID': 'no label', 'shapeGroup': 'no label', 'shapeType': 'no label', });
 lyr_geoBoundariesCZEADM0_8.set('fieldLabels', {'shapeName': 'no label', 'shapeISO': 'no label', 'shapeID': 'no label', 'shapeGroup': 'no label', 'shapeType': 'no label', });
-lyr_gminy_9.set('fieldLabels', {'gml_id': 'no label', 'JPT_SJR_KO': 'no label', 'JPT_POWIER': 'no label', 'JPT_KOD_JE': 'no label', 'JPT_NAZWA_': 'no label', 'JPT_ORGAN_': 'no label', 'JPT_JOR_ID': 'no label', 'WERSJA_OD': 'no label', 'WERSJA_DO': 'no label', 'WAZNY_OD': 'no label', 'WAZNY_DO': 'no label', 'JPT_KOD__1': 'no label', 'JPT_NAZWA1': 'no label', 'JPT_ORGAN1': 'no label', 'JPT_WAZNA_': 'no label', 'ID_BUFORA_': 'no label', 'ID_BUFORA1': 'no label', 'ID_TECHNIC': 'no label', 'IIP_PRZEST': 'no label', 'IIP_IDENTY': 'no label', 'IIP_WERSJA': 'no label', 'JPT_KJ_IIP': 'no label', 'JPT_KJ_I_1': 'no label', 'JPT_KJ_I_2': 'no label', 'JPT_OPIS': 'no label', 'JPT_SPS_KO': 'no label', 'ID_BUFOR_1': 'no label', 'JPT_ID': 'no label', 'JPT_POWI_1': 'no label', 'JPT_KJ_I_3': 'no label', 'JPT_GEOMET': 'no label', 'JPT_GEOM_1': 'no label', 'SHAPE_LENG': 'no label', 'SHAPE_AREA': 'no label', 'REGON': 'no label', 'RODZAJ': 'no label', 'Winner_win': 'no label', '2024-sejmiki-po-gminach-proc_v_Rodzaj jednostki': 'no label', '2024-sejmiki-po-gminach-proc_v_Gmina': 'no label', '2024-sejmiki-po-gminach-proc_v_Powiat': 'no label', '2024-sejmiki-po-gminach-proc_v_Województwo': 'no label', '2024-sejmiki-po-gminach-proc_v_KO': 'no label', '2024-sejmiki-po-gminach-proc_v_PSL': 'no label', '2024-sejmiki-po-gminach-proc_v_PiS': 'no label', '2024-sejmiki-po-gminach-proc_v_Liczba obwodów': 'no label', });
-lyr_powiaty_10.set('fieldLabels', {'gml_id': 'no label', 'JPT_SJR_KO': 'no label', 'JPT_POWIER': 'no label', 'JPT_KOD_JE': 'no label', 'JPT_NAZWA_': 'no label', 'JPT_ORGAN_': 'no label', 'JPT_JOR_ID': 'no label', 'WERSJA_OD': 'no label', 'WERSJA_DO': 'no label', 'WAZNY_OD': 'no label', 'WAZNY_DO': 'no label', 'JPT_KOD__1': 'no label', 'JPT_NAZWA1': 'no label', 'JPT_ORGAN1': 'no label', 'JPT_WAZNA_': 'no label', 'ID_BUFORA_': 'no label', 'ID_BUFORA1': 'no label', 'ID_TECHNIC': 'no label', 'IIP_PRZEST': 'no label', 'IIP_IDENTY': 'no label', 'IIP_WERSJA': 'no label', 'JPT_KJ_IIP': 'no label', 'JPT_KJ_I_1': 'no label', 'JPT_KJ_I_2': 'no label', 'JPT_OPIS': 'no label', 'JPT_SPS_KO': 'no label', 'ID_BUFOR_1': 'no label', 'JPT_ID': 'no label', 'JPT_POWI_1': 'no label', 'JPT_KJ_I_3': 'no label', 'JPT_GEOMET': 'no label', 'JPT_GEOM_1': 'no label', 'SHAPE_LENG': 'no label', 'SHAPE_AREA': 'no label', 'REGON': 'no label', 'RODZAJ': 'no label', 'winner': 'no label', '2024-sejmiki-po-powiatach-proc_Powiat': 'no label', '2024-sejmiki-po-powiatach-proc_Województwo': 'no label', '2024-sejmiki-po-powiatach-proc_KO': 'no label', '2024-sejmiki-po-powiatach-proc_PiS': 'no label', '2024-sejmiki-po-powiatach-proc_Liczba obwodów': 'no label', });
-lyr_wojewodztwa_11.set('fieldLabels', {'gml_id': 'no label', 'JPT_SJR_KO': 'no label', 'JPT_POWIER': 'no label', 'JPT_KOD_JE': 'no label', 'JPT_NAZWA_': 'no label', 'JPT_ORGAN_': 'no label', 'JPT_JOR_ID': 'no label', 'WERSJA_OD': 'no label', 'WERSJA_DO': 'no label', 'WAZNY_OD': 'no label', 'WAZNY_DO': 'no label', 'JPT_KOD__1': 'no label', 'JPT_NAZWA1': 'no label', 'JPT_ORGAN1': 'no label', 'JPT_WAZNA_': 'no label', 'ID_BUFORA_': 'no label', 'ID_BUFORA1': 'no label', 'ID_TECHNIC': 'no label', 'IIP_PRZEST': 'no label', 'IIP_IDENTY': 'no label', 'IIP_WERSJA': 'no label', 'JPT_KJ_IIP': 'no label', 'JPT_KJ_I_1': 'no label', 'JPT_KJ_I_2': 'no label', 'JPT_OPIS': 'no label', 'JPT_SPS_KO': 'no label', 'ID_BUFOR_1': 'no label', 'JPT_ID': 'no label', 'JPT_POWI_1': 'no label', 'JPT_KJ_I_3': 'no label', 'JPT_GEOMET': 'no label', 'JPT_GEOM_1': 'no label', 'SHAPE_LENG': 'no label', 'SHAPE_AREA': 'no label', 'REGON': 'no label', 'RODZAJ': 'no label', 'winner': 'no label', '2024-sejmiki-po-wojewodztwach-proc_Województwo': 'no label', '2024-sejmiki-po-wojewodztwach-proc_KO': 'no label', '2024-sejmiki-po-wojewodztwach-proc_Liczba obwodów': 'no label', });
-lyr_Data_agregate_log_gis_13.set('fieldLabels', {'Type': 'no label', 'Project Name': 'no label', 'Capacity (MW)': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Log scale capacity': 'no label', });
-lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_15.set('fieldLabels', {'Date Last Researched': 'no label', 'Country/Area': 'no label', 'Project Name': 'no label', 'Phase Name': 'no label', 'Capacity (MW)': 'no label', 'Installation Type': 'no label', 'Status': 'no label', 'Start year': 'no label', 'Retired year': 'no label', 'Operator': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location accuracy': 'no label', 'City': 'no label', 'Local area (taluk, county)': 'no label', 'Major area (prefecture, district)': 'no label', 'State/Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'GEM location ID': 'no label', 'GEM phase ID': 'no label', 'Other IDs (location)': 'no label', 'Other IDs (unit/phase)': 'no label', 'Wiki URL': 'no label', });
-lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_16.set('fieldLabels', {'Longitude': 'no label', 'Latitude': 'no label', 'Date Last Researched': 'no label', 'Country/Area': 'no label', 'Project Name': 'no label', 'Capacity (MW)': 'no label', 'Capacity Rating': 'no label', 'Technology Type': 'no label', 'Status': 'no label', 'Location accuracy': 'no label', 'City': 'no label', 'Local area (taluk, county)': 'no label', 'State/Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'GEM location ID': 'no label', 'GEM phase ID': 'no label', 'Wiki URL': 'no label', });
-lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_17.set('fieldLabels', {'Wiki URL': 'no label', 'Country/Area': 'no label', 'Plant name': 'no label', 'Other Name(s)': 'no label', 'Unit name': 'no label', 'Fuel': 'no label', 'Capacity (MW)': 'no label', 'Status': 'no label', 'Turbine/Engine Technology': 'no label', 'Equipment Manufacturer/Model': 'no label', 'CHP': 'no label', 'Hydrogen capable?': 'no label', 'CCS attachment?': 'no label', 'Conversion/replacement?': 'no label', 'Conversion from/replacement of (fuel)': 'no label', 'Conversion from/replacement of (GEM unit ID)': 'no label', 'Start year': 'no label', 'Owner(s)': 'no label', 'Owner(s) GEM Entity ID': 'no label', 'Parent(s)': 'no label', 'Parent GEM Entity ID': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location accuracy': 'no label', 'City': 'no label', 'Major area (prefecture, district)': 'no label', 'State/Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'Other IDs (location)': 'no label', 'Other IDs (unit)': 'no label', 'GEM location ID': 'no label', 'GEM unit ID': 'no label', 'Fuel classification?': 'no label', });
-lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_18.set('fieldLabels', {'Date Last Researched': 'no label', 'Country/Area': 'no label', 'Project Name': 'no label', 'Unit Name': 'no label', 'Capacity (MW)': 'no label', 'Status': 'no label', 'Reactor Type': 'no label', 'Model': 'no label', 'Start Year': 'no label', 'Commercial Operation Date': 'no label', 'Owner': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location Accuracy': 'no label', 'City': 'no label', 'State/Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'GEM location ID': 'no label', 'GEM unit ID': 'no label', 'Wiki URL': 'no label', });
-lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_19.set('fieldLabels', {'Date Last Researched': 'no label', 'Country/Area 1': 'no label', 'Project Name': 'no label', 'Other name(s)': 'no label', 'Capacity (MW)': 'no label', 'Binational': 'no label', 'Country/Area 1 Capacity (MW)': 'no label', 'Status': 'no label', 'Start Year': 'no label', 'Owner': 'no label', 'Technology Type': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location Accuracy': 'no label', 'Local Area 1': 'no label', 'State/Province 1': 'no label', 'Subregion 1': 'no label', 'Region 1': 'no label', 'GEM location ID': 'no label', 'GEM unit ID': 'no label', 'Wiki URL': 'no label', });
-lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_20.set('fieldLabels', {'GEM unit/phase ID': 'no label', 'GEM location ID': 'no label', 'Country/Area': 'no label', 'Wiki URL': 'no label', 'Plant name': 'no label', 'Unit name': 'no label', 'Plant name (other)': 'no label', 'Plant name (local)': 'no label', 'Owner': 'no label', 'Owner GEM Entity ID': 'no label', 'Parent': 'no label', 'Parent GEM Entity ID': 'no label', 'Capacity (MW)': 'no label', 'Status': 'no label', 'Start year': 'no label', 'Retired year': 'no label', 'Planned retirement': 'no label', 'Coal phaseout year': 'no label', 'Net zero year': 'no label', 'Combustion technology': 'no label', 'Coal type': 'no label', 'Coal source': 'no label', 'Conversion to (fuel)': 'no label', 'Conversion to (GEM unit ID)': 'no label', 'Alternate Fuel': 'no label', 'Location': 'no label', 'Local area (taluk, county)': 'no label', 'Major area (prefecture, district)': 'no label', 'Subnational unit (province, state)': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location accuracy': 'no label', 'Captive': 'no label', 'Captive industry use': 'no label', 'CHP': 'no label', 'Capacity factor': 'no label', 'Plant age (years)': 'no label', 'Heat rate (Btu per kWh)': 'no label', 'Emission factor (kg of CO2 per TJ)': 'no label', 'Annual CO2 (million tonnes / annum)': 'no label', 'Remaining plant lifetime (years)': 'no label', 'Lifetime CO2 (million tonnes)': 'no label', });
-lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_21.set('fieldLabels', {'GEM Mine ID': 'no label', 'Country / Area': 'no label', 'Mine Name': 'no label', 'Mine Name AKAs': 'no label', 'Mine Name (Non-ENG)': 'no label', 'Owners': 'no label', 'Parent Company': 'no label', 'Company HQs': 'no label', 'Capacity (Mtpa)': 'no label', 'Production (Mtpa)': 'no label', 'Year of Production': 'no label', 'Mine Type': 'no label', 'Mining Method': 'no label', 'Mine Size
+lyr_Voting_gminy_9.set('fieldLabels', {'fid': 'no label', 'JPT_SJR_KO': 'no label', 'JPT_POWIER': 'no label', 'JPT_KOD_JE': 'no label', 'JPT_NAZWA_': 'no label', 'JPT_JOR_ID': 'no label', 'WERSJA_OD': 'no label', 'WAZNY_OD': 'no label', 'JPT_ORGAN1': 'no label', 'JPT_WAZNA_': 'no label', 'ID_BUFORA_': 'no label', 'ID_TECHNIC': 'no label', 'IIP_PRZEST': 'no label', 'IIP_IDENTY': 'no label', 'IIP_WERSJA': 'no label', 'JPT_KJ_IIP': 'no label', 'JPT_KJ_I_1': 'no label', 'JPT_SPS_KO': 'no label', 'JPT_ID': 'no label', 'SHAPE_LENG': 'no label', 'SHAPE_AREA': 'no label', 'REGON': 'no label', 'RODZAJ': 'no label', 'Ele_win': 'inline label - visible with data', '2024-sejmiki-po-gminach-proc_Rodzaj jednostki': 'no label', '2024-sejmiki-po-gminach-proc_Gmina': 'no label', '2024-sejmiki-po-gminach-proc_Powiat': 'no label', '2024-sejmiki-po-gminach-proc_Województwo': 'no label', '2024-sejmiki-po-gminach-proc_KO': 'inline label - visible with data', '2024-sejmiki-po-gminach-proc_PSL': 'inline label - visible with data', '2024-sejmiki-po-gminach-proc_PiS': 'inline label - visible with data', '2024-sejmiki-po-gminach-proc_Liczba obwodów': 'no label', });
+lyr_Voting_powiaty_10.set('fieldLabels', {'fid': 'no label', 'JPT_SJR_KO': 'no label', 'JPT_POWIER': 'no label', 'JPT_KOD_JE': 'no label', 'JPT_NAZWA_': 'no label', 'JPT_JOR_ID': 'no label', 'WERSJA_OD': 'no label', 'WAZNY_OD': 'no label', 'JPT_ORGAN1': 'no label', 'JPT_WAZNA_': 'no label', 'ID_BUFORA_': 'no label', 'ID_BUFORA1': 'no label', 'ID_TECHNIC': 'no label', 'IIP_PRZEST': 'no label', 'IIP_IDENTY': 'no label', 'IIP_WERSJA': 'no label', 'JPT_KJ_IIP': 'no label', 'JPT_KJ_I_1': 'no label', 'JPT_SPS_KO': 'no label', 'JPT_ID': 'no label', 'SHAPE_LENG': 'no label', 'SHAPE_AREA': 'no label', 'REGON': 'no label', 'RODZAJ': 'no label', 'winner': 'no label', '2024-sejmiki-po-powiatach-proc_Powiat': 'no label', '2024-sejmiki-po-powiatach-proc_Województwo': 'no label', '2024-sejmiki-po-powiatach-proc_KO': 'no label', '2024-sejmiki-po-powiatach-proc_PiS': 'no label', '2024-sejmiki-po-powiatach-proc_Liczba obwodów': 'no label', });
+lyr_Voting_wojewodztwa_11.set('fieldLabels', {'fid': 'no label', 'gml_id': 'no label', 'JPT_SJR_KO': 'no label', 'JPT_POWIER': 'no label', 'JPT_KOD_JE': 'no label', 'JPT_NAZWA_': 'no label', 'JPT_ORGAN_': 'no label', 'JPT_JOR_ID': 'no label', 'WERSJA_OD': 'no label', 'WERSJA_DO': 'no label', 'WAZNY_OD': 'no label', 'WAZNY_DO': 'no label', 'JPT_KOD__1': 'no label', 'JPT_NAZWA1': 'no label', 'JPT_ORGAN1': 'no label', 'JPT_WAZNA_': 'no label', 'ID_BUFORA_': 'no label', 'ID_BUFORA1': 'no label', 'ID_TECHNIC': 'no label', 'IIP_PRZEST': 'no label', 'IIP_IDENTY': 'no label', 'IIP_WERSJA': 'no label', 'JPT_KJ_IIP': 'no label', 'JPT_KJ_I_1': 'no label', 'JPT_KJ_I_2': 'no label', 'JPT_OPIS': 'no label', 'JPT_SPS_KO': 'no label', 'ID_BUFOR_1': 'no label', 'JPT_ID': 'no label', 'JPT_POWI_1': 'no label', 'JPT_KJ_I_3': 'no label', 'JPT_GEOMET': 'no label', 'JPT_GEOM_1': 'no label', 'SHAPE_LENG': 'no label', 'SHAPE_AREA': 'no label', 'REGON': 'no label', 'RODZAJ': 'no label', 'winner': 'no label', '2024-sejmiki-po-wojewodztwach-proc_Województwo': 'no label', '2024-sejmiki-po-wojewodztwach-proc_KO': 'no label', '2024-sejmiki-po-wojewodztwach-proc_Liczba obwodów': 'no label', });
+lyr_Data_agregate_log_gis_13.set('fieldLabels', {'Type': 'inline label - visible with data', 'Project Name': 'inline label - visible with data', 'Capacity (MW)': 'inline label - visible with data', 'Latitude': 'inline label - visible with data', 'Longitude': 'inline label - visible with data', 'Log scale capacity': 'inline label - visible with data', });
+lyr_GlobalWindPowerTrackerFebruary2026_prep_gis_slaskiecopy_16.set('fieldLabels', {'Date Last Researched': 'no label', 'Country/Area': 'no label', 'Project Name': 'no label', 'Phase Name': 'no label', 'Capacity (MW)': 'no label', 'Installation Type': 'no label', 'Status': 'no label', 'Start year': 'no label', 'Retired year': 'no label', 'Operator': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location accuracy': 'no label', 'City': 'no label', 'Local area (taluk, county)': 'no label', 'Major area (prefecture, district)': 'no label', 'State/Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'GEM location ID': 'no label', 'GEM phase ID': 'no label', 'Other IDs (location)': 'no label', 'Other IDs (unit/phase)': 'no label', 'Wiki URL': 'no label', });
+lyr_GlobalSolarPowerTrackerFebruary2026_gis_slaskie_only_17.set('fieldLabels', {'Longitude': 'inline label - visible with data', 'Latitude': 'inline label - visible with data', 'Date Last Researched': 'no label', 'Country/Area': 'no label', 'Project Name': 'inline label - visible with data', 'Capacity (MW)': 'inline label - visible with data', 'Capacity Rating': 'no label', 'Technology Type': 'inline label - visible with data', 'Status': 'inline label - visible with data', 'Location accuracy': 'no label', 'City': 'inline label - visible with data', 'Local area (taluk, county)': 'inline label - visible with data', 'State/Province': 'inline label - visible with data', 'Subregion': 'inline label - visible with data', 'Region': 'inline label - visible with data', 'GEM location ID': 'no label', 'GEM phase ID': 'no label', 'Wiki URL': 'inline label - visible with data', });
+lyr_GlobalOilandGasPlantTrackerGOGPTJanuary2026_gis_slaskiecopy_18.set('fieldLabels', {'Wiki URL': 'no label', 'Country/Area': 'no label', 'Plant name': 'no label', 'Other Name(s)': 'no label', 'Unit name': 'no label', 'Fuel': 'no label', 'Capacity (MW)': 'no label', 'Status': 'no label', 'Turbine/Engine Technology': 'no label', 'Equipment Manufacturer/Model': 'no label', 'CHP': 'no label', 'Hydrogen capable?': 'no label', 'CCS attachment?': 'no label', 'Conversion/replacement?': 'no label', 'Conversion from/replacement of (fuel)': 'no label', 'Conversion from/replacement of (GEM unit ID)': 'no label', 'Start year': 'no label', 'Owner(s)': 'no label', 'Owner(s) GEM Entity ID': 'no label', 'Parent(s)': 'no label', 'Parent GEM Entity ID': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location accuracy': 'no label', 'City': 'no label', 'Major area (prefecture, district)': 'no label', 'State/Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'Other IDs (location)': 'no label', 'Other IDs (unit)': 'no label', 'GEM location ID': 'no label', 'GEM unit ID': 'no label', 'Fuel classification?': 'no label', });
+lyr_GlobalNuclearPowerTrackerSeptember2025_giscopy_19.set('fieldLabels', {'Date Last Researched': 'no label', 'Country/Area': 'no label', 'Project Name': 'no label', 'Unit Name': 'no label', 'Capacity (MW)': 'no label', 'Status': 'no label', 'Reactor Type': 'no label', 'Model': 'no label', 'Start Year': 'no label', 'Commercial Operation Date': 'no label', 'Owner': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location Accuracy': 'no label', 'City': 'no label', 'State/Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'GEM location ID': 'no label', 'GEM unit ID': 'no label', 'Wiki URL': 'no label', });
+lyr_GlobalHydropowerTrackerApril2025_gis_slaskiecopy_20.set('fieldLabels', {'Date Last Researched': 'no label', 'Country/Area 1': 'no label', 'Project Name': 'no label', 'Other name(s)': 'no label', 'Capacity (MW)': 'no label', 'Binational': 'no label', 'Country/Area 1 Capacity (MW)': 'no label', 'Status': 'no label', 'Start Year': 'no label', 'Owner': 'no label', 'Technology Type': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location Accuracy': 'no label', 'Local Area 1': 'no label', 'State/Province 1': 'no label', 'Subregion 1': 'no label', 'Region 1': 'no label', 'GEM location ID': 'no label', 'GEM unit ID': 'no label', 'Wiki URL': 'no label', });
+lyr_GlobalCoalPlantTrackerJanuary2026_gis_slaskiecopy_21.set('fieldLabels', {'GEM unit/phase ID': 'no label', 'GEM location ID': 'no label', 'Country/Area': 'no label', 'Wiki URL': 'no label', 'Plant name': 'no label', 'Unit name': 'no label', 'Plant name (other)': 'no label', 'Plant name (local)': 'no label', 'Owner': 'no label', 'Owner GEM Entity ID': 'no label', 'Parent': 'no label', 'Parent GEM Entity ID': 'no label', 'Capacity (MW)': 'no label', 'Status': 'no label', 'Start year': 'no label', 'Retired year': 'no label', 'Planned retirement': 'no label', 'Coal phaseout year': 'no label', 'Net zero year': 'no label', 'Combustion technology': 'no label', 'Coal type': 'no label', 'Coal source': 'no label', 'Conversion to (fuel)': 'no label', 'Conversion to (GEM unit ID)': 'no label', 'Alternate Fuel': 'no label', 'Location': 'no label', 'Local area (taluk, county)': 'no label', 'Major area (prefecture, district)': 'no label', 'Subnational unit (province, state)': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location accuracy': 'no label', 'Captive': 'no label', 'Captive industry use': 'no label', 'CHP': 'no label', 'Capacity factor': 'no label', 'Plant age (years)': 'no label', 'Heat rate (Btu per kWh)': 'no label', 'Emission factor (kg of CO2 per TJ)': 'no label', 'Annual CO2 (million tonnes / annum)': 'no label', 'Remaining plant lifetime (years)': 'no label', 'Lifetime CO2 (million tonnes)': 'no label', });
+lyr_GlobalCoalMineTrackerMay2025V2_non_operating_gis_slaskiecopy_22.set('fieldLabels', {'GEM Mine ID': 'no label', 'Country / Area': 'no label', 'Mine Name': 'no label', 'Mine Name AKAs': 'no label', 'Mine Name (Non-ENG)': 'no label', 'Owners': 'no label', 'Parent Company': 'no label', 'Company HQs': 'no label', 'Capacity (Mtpa)': 'no label', 'Production (Mtpa)': 'no label', 'Year of Production': 'no label', 'Mine Type': 'no label', 'Mining Method': 'no label', 'Mine Size
 (Km2)': 'no label', 'Mine Depth
 (m)': 'no label', 'Depth Accuracy': 'no label', 'Workforce Size': 'no label', 'Workforce Accuracy': 'no label', 'Coal Type': 'no label', 'Coal Grade': 'no label', 'Opening Year': 'no label', 'Closing Year': 'no label', 'Reason for Closure': 'no label', 'Mine Site Status': 'no label', 'Coalfield': 'no label', 'Location': 'no label', 'Prefecture, District': 'no label', 'State, Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location Accuracy': 'no label', 'Reported Coal Mine Methane Emissions (thousand tonnes per year)': 'no label', });
-lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_22.set('fieldLabels', {'GEM Mine ID': 'no label', 'Country / Area': 'no label', 'Mine Name': 'no label', 'Mine Name AKAs': 'no label', 'GEM Wiki Page (ENG)': 'no label', 'Status': 'no label', 'Owners': 'no label', 'GEM Entity ID': 'no label', 'Owners (Non-ENG)': 'no label', 'Parent Company': 'no label', 'GEM Entity ID_1': 'no label', 'Company HQs': 'no label', 'Capacity (Mtpa)': 'no label', 'Production (Mtpa)': 'no label', 'Year of Production': 'no label', 'Mine Type': 'no label', 'Mining Method': 'no label', 'Mine Size (Km2)': 'no label', 'Mine Depth (m)': 'no label', 'Depth Accuracy': 'no label', 'Workforce Size': 'no label', 'Workforce Accuracy': 'no label', 'Coal Type': 'no label', 'Coal Grade': 'no label', 'Total Reserves (Proven and Probable, Mt)': 'no label', 'Year of Total Reserves Recorded': 'no label', 'Total Resource (Inferred, Indicated, Measured)': 'no label', 'Reserve to Production Ratio (R/P)': 'no label', 'Opening Year': 'no label', 'Closing Year': 'no label', 'Reported Life of Mine': 'no label', 'Reported Year of Mine Life': 'no label', 'Coalfield': 'no label', 'Location': 'no label', 'State, Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location Accuracy': 'no label', 'Reported Coal Mine Methane Emissions (thousand tonnes per year)': 'no label', 'Year of Reported Coal Mine Methane Emissions': 'no label', 'Has associated CMM mitigation data': 'no label', 'GEM Coal Mine Methane Emissions Estimate (MCM/yr)': 'no label', 'GEM Coal Mine Methane Emissions Estimate (M tonnes/yr)': 'no label', 'Methane Gas Content (m^3/tonne) (Updated)': 'no label', 'Methane Emissions Factor (Updated)': 'no label', 'CMM Emissions (CO2e 20 years)': 'no label', 'CMM Emissions (CO2e 100 years)': 'no label', 'ISO Code': 'no label', });
-lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_23.set('fieldLabels', {'GEM Plant ID': 'no label', 'GEM Asset name (English)': 'no label', 'Asset name (other language)': 'no label', 'Alternative asset name(s)': 'no label', 'SFI ID': 'no label', 'LeadIT Project ID': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Coordinate accuracy': 'no label', 'GEM wiki page': 'no label', 'Municipality': 'no label', 'Subnational unit': 'no label', 'Country/Area': 'no label', 'Cement Capacity (millions metric tonnes per annum)': 'no label', 'Clinker Capacity (millions metric tonnes per annum)': 'no label', 'Majority Cement Type': 'no label', 'Cement Color': 'no label', 'Operating status': 'no label', 'Start date': 'no label', 'Owner name (English)': 'no label', 'Owner name (other language)': 'no label', 'Owner Entity ID': 'no label', 'Parent': 'no label', 'Parent Entity ID': 'no label', 'Plant type': 'no label', 'Production type': 'no label', 'CCS/CCUS': 'no label', 'Alternative Fuel': 'no label', 'Clay Calcination': 'no label', 'field_30': 'no label', 'field_31': 'no label', 'field_32': 'no label', 'field_33': 'no label', 'field_34': 'no label', 'field_35': 'no label', 'field_36': 'no label', 'field_37': 'no label', 'field_38': 'no label', 'field_39': 'no label', 'field_40': 'no label', 'field_41': 'no label', 'field_42': 'no label', });
-lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_24.set('fieldLabels', {'Date last researched': 'no label', 'Country/Area': 'no label', 'Project Name': 'no label', 'Unit Name': 'no label', 'Other Name(s)': 'no label', 'Capacity (MW)': 'no label', 'Fuel': 'no label', 'Status': 'no label', 'Conversion/Replacement?': 'no label', 'Unit Conversion Year': 'no label', 'Start Year': 'no label', 'Operator(s)': 'no label', 'Operator(s) GEM Entity ID': 'no label', 'Owner(s)': 'no label', 'Owner Name(s) in Local Language / Script': 'no label', 'Owner(s) GEM Entity ID': 'no label', 'Parent(s)': 'no label', 'Parent(s) GEM Entity ID': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location Accuracy': 'no label', 'City': 'no label', 'Major Area (prefecture, district)': 'no label', 'State/Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'GEM location ID': 'no label', 'GEM phase ID': 'no label', 'Wiki URL': 'no label', });
-lyr_Grid_25.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', });
-lyr_Grid_25.on('precompose', function(evt) {
+lyr_GlobalCoalMineTrackerMay2025V2_operating_gis_slaskiecopy_23.set('fieldLabels', {'GEM Mine ID': 'no label', 'Country / Area': 'no label', 'Mine Name': 'no label', 'Mine Name AKAs': 'no label', 'GEM Wiki Page (ENG)': 'no label', 'Status': 'no label', 'Owners': 'no label', 'GEM Entity ID': 'no label', 'Owners (Non-ENG)': 'no label', 'Parent Company': 'no label', 'GEM Entity ID_1': 'no label', 'Company HQs': 'no label', 'Capacity (Mtpa)': 'no label', 'Production (Mtpa)': 'no label', 'Year of Production': 'no label', 'Mine Type': 'no label', 'Mining Method': 'no label', 'Mine Size (Km2)': 'no label', 'Mine Depth (m)': 'no label', 'Depth Accuracy': 'no label', 'Workforce Size': 'no label', 'Workforce Accuracy': 'no label', 'Coal Type': 'no label', 'Coal Grade': 'no label', 'Total Reserves (Proven and Probable, Mt)': 'no label', 'Year of Total Reserves Recorded': 'no label', 'Total Resource (Inferred, Indicated, Measured)': 'no label', 'Reserve to Production Ratio (R/P)': 'no label', 'Opening Year': 'no label', 'Closing Year': 'no label', 'Reported Life of Mine': 'no label', 'Reported Year of Mine Life': 'no label', 'Coalfield': 'no label', 'Location': 'no label', 'State, Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location Accuracy': 'no label', 'Reported Coal Mine Methane Emissions (thousand tonnes per year)': 'no label', 'Year of Reported Coal Mine Methane Emissions': 'no label', 'Has associated CMM mitigation data': 'no label', 'GEM Coal Mine Methane Emissions Estimate (MCM/yr)': 'no label', 'GEM Coal Mine Methane Emissions Estimate (M tonnes/yr)': 'no label', 'Methane Gas Content (m^3/tonne) (Updated)': 'no label', 'Methane Emissions Factor (Updated)': 'no label', 'CMM Emissions (CO2e 20 years)': 'no label', 'CMM Emissions (CO2e 100 years)': 'no label', 'ISO Code': 'no label', });
+lyr_GlobalCementandConcreteTracker_July2025_gis_slaskiecopy_24.set('fieldLabels', {'GEM Plant ID': 'no label', 'GEM Asset name (English)': 'no label', 'Asset name (other language)': 'no label', 'Alternative asset name(s)': 'no label', 'SFI ID': 'no label', 'LeadIT Project ID': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Coordinate accuracy': 'no label', 'GEM wiki page': 'no label', 'Municipality': 'no label', 'Subnational unit': 'no label', 'Country/Area': 'no label', 'Cement Capacity (millions metric tonnes per annum)': 'no label', 'Clinker Capacity (millions metric tonnes per annum)': 'no label', 'Majority Cement Type': 'no label', 'Cement Color': 'no label', 'Operating status': 'no label', 'Start date': 'no label', 'Owner name (English)': 'no label', 'Owner name (other language)': 'no label', 'Owner Entity ID': 'no label', 'Parent': 'no label', 'Parent Entity ID': 'no label', 'Plant type': 'no label', 'Production type': 'no label', 'CCS/CCUS': 'no label', 'Alternative Fuel': 'no label', 'Clay Calcination': 'no label', 'field_30': 'no label', 'field_31': 'no label', 'field_32': 'no label', 'field_33': 'no label', 'field_34': 'no label', 'field_35': 'no label', 'field_36': 'no label', 'field_37': 'no label', 'field_38': 'no label', 'field_39': 'no label', 'field_40': 'no label', 'field_41': 'no label', 'field_42': 'no label', });
+lyr_GlobalBioenergyPowerTrackerGBPTV3_gis_slaskiecopy_25.set('fieldLabels', {'Date last researched': 'no label', 'Country/Area': 'no label', 'Project Name': 'no label', 'Unit Name': 'no label', 'Other Name(s)': 'no label', 'Capacity (MW)': 'no label', 'Fuel': 'no label', 'Status': 'no label', 'Conversion/Replacement?': 'no label', 'Unit Conversion Year': 'no label', 'Start Year': 'no label', 'Operator(s)': 'no label', 'Operator(s) GEM Entity ID': 'no label', 'Owner(s)': 'no label', 'Owner Name(s) in Local Language / Script': 'no label', 'Owner(s) GEM Entity ID': 'no label', 'Parent(s)': 'no label', 'Parent(s) GEM Entity ID': 'no label', 'Latitude': 'no label', 'Longitude': 'no label', 'Location Accuracy': 'no label', 'City': 'no label', 'Major Area (prefecture, district)': 'no label', 'State/Province': 'no label', 'Subregion': 'no label', 'Region': 'no label', 'GEM location ID': 'no label', 'GEM phase ID': 'no label', 'Wiki URL': 'no label', });
+lyr_SilesianVoivodeshipBoundaries_26.set('fieldLabels', {'gml_id': 'no label', 'JPT_SJR_KO': 'no label', 'JPT_POWIER': 'no label', 'JPT_KOD_JE': 'no label', 'JPT_NAZWA_': 'no label', 'JPT_ORGAN_': 'no label', 'JPT_JOR_ID': 'no label', 'WERSJA_OD': 'no label', 'WERSJA_DO': 'no label', 'WAZNY_OD': 'no label', 'WAZNY_DO': 'no label', 'JPT_KOD__1': 'no label', 'JPT_NAZWA1': 'no label', 'JPT_ORGAN1': 'no label', 'JPT_WAZNA_': 'no label', 'ID_BUFORA_': 'no label', 'ID_BUFORA1': 'no label', 'ID_TECHNIC': 'no label', 'IIP_PRZEST': 'no label', 'IIP_IDENTY': 'no label', 'IIP_WERSJA': 'no label', 'JPT_KJ_IIP': 'no label', 'JPT_KJ_I_1': 'no label', 'JPT_KJ_I_2': 'no label', 'JPT_OPIS': 'no label', 'JPT_SPS_KO': 'no label', 'ID_BUFOR_1': 'no label', 'JPT_ID': 'no label', 'JPT_POWI_1': 'no label', 'JPT_KJ_I_3': 'no label', 'JPT_GEOMET': 'no label', 'JPT_GEOM_1': 'no label', 'SHAPE_LENG': 'no label', 'SHAPE_AREA': 'no label', 'REGON': 'no label', 'RODZAJ': 'no label', 'winner': 'no label', });
+lyr_Grid_27.set('fieldLabels', {'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', });
+lyr_Grid_27.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
